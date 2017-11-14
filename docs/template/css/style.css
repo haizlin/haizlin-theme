@@ -63,11 +63,11 @@ em{font-style:normal}
 
 .main-left{text-align: center;}
 .main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 9999;}
-.main-left header{font-weight: bold;margin-top: 47px;}
-.main-left header .nickname{font-size: 24px;font-weight: bold;margin-top: 26px;}
+.main-left header{font-weight: bold;margin-top: 38px;}
+.main-left header .nickname{font-size: 24px;font-weight: bold;margin-top: 24px;}
 .main-left header .autograph{font-size: 16px;margin-top: 20px;}
-.main-left .line{border-top:1px solid #192230;border-bottom:1px solid #404651;padding:0 8px;margin-top: 25px;margin-bottom: 21px;}
-.main-left .search{margin-bottom: 20px;width: 239px;height: 38px;margin:0 auto;margin-bottom: 20px;}
+.main-left .line{border-top:1px solid #192230;border-bottom:1px solid #404651;padding:0 8px;margin-top: 20px;margin-bottom: 14px;}
+.main-left .search{width: 239px;height: 38px;margin:0 auto;margin-bottom: 20px;}
 .main-left .search input{width: 229px;height: 38px;line-height: 38px;background: #404651;color: #52646c;font-size: 18px;padding:0 5px;}
 .main-left .social a{margin-right: 23px;}
 .main-left nav{margin-top: 26px;}
@@ -89,14 +89,18 @@ em{font-style:normal}
 .main-right article li{margin-top: 27px;background: #fbfbfb;padding:25px 33px 0px 33px;}
 .main-right article .title{font-size: 24px;color: #dd7b26;}
 .main-right article .title a{color: #dd7b26;}
-.main-right article .description{font-size: 16px;color: #040000;line-height: 26px;margin-top: 24px;margin-bottom: 20px;}
+.main-right article .title a:hover{font-weight:bold;text-decoration: underline;}
+.main-right article .description{font-size: 14px;color: #040000;line-height: 26px;margin-top: 24px;margin-bottom: 20px;}
 .main-right article .description span{margin-left: 24px;}
-.main-right article .description span a{color: #295dab;}
 .main-right article .tag{font-size: 14px;color: #fff;border-top: 1px solid #d1d6d6;height: 38px;line-height: 38px;}
-.main-right article .tag span{background: #ea8b4c;padding:0 9px;text-align: center;height: 22px;line-height: 22px;display: inline-block;border-radius: 10px;margin-right: 14px;}
+.main-right article .tag span{background: #ea8b4c;padding:0 9px;text-align: center;height: 22px;line-height: 22px;display: inline-block;border-radius: 10px;margin-right: 10px;}
 .main-right article .tag span a{color: #fff;}
+.main-right article .tag span:nth-child(1){background: #ea8b4c;}
 .main-right article .tag span:nth-child(2){background: #4f8ecb;}
-.main-right article .tag span:nth-child(3){background: #4f8ecb;}
+.main-right article .tag span:nth-child(3){background: #adcb4f;}
+.main-right article .tag span:nth-child(4){background: #cb664f;}
+.main-right article .tag span:nth-child(5){background: #814fcb;}
+.main-right article .tag span:nth-child(6){background: #cb4fb8;}
 .main-right article .tag-date{font-size: 14px;color: #666;background: none;}
 .main-right article .page{margin: 50px 0;color: #434e60;font-size: 12px;text-align: center;}
 .main-right article .page a{display: inline-block;margin: 0 8px;color: #434e60;}
@@ -150,7 +154,7 @@ em{font-style:normal}
     -moz-animation: slide 8s linear infinite;
     -o-animation: slide 8s linear infinite;
     -ms-animation: slide 8s linear infinite;
-    animation: slide 8s linear infinite;
+    animation: slide 8s infinite linear;
     background-image: url(../js/stars.svg);
     background-position: center center;
     -webkit-background-size: 320px;
