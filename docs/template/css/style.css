@@ -85,7 +85,7 @@ em{font-style:normal}
 .main-right{background: #ebebeb; margin-left: 320px;}
 .main-right .banner img{width: 100%;}
 .main-right .container{margin:27px 47px;}
-.main-right article.article-list{/* width:calc(100% - 252px); */margin-right: 269px;}
+.main-right article.article-list{/* width:calc(100% - 269px); */margin-right: 269px;}
 .main-right article li{margin-top: 27px;background: #fbfbfb;padding:25px 33px 0px 33px;}
 .main-right article .title{font-size: 24px;color: #dd7b26;}
 .main-right article .title a{color: #dd7b26;}
@@ -150,12 +150,12 @@ em{font-style:normal}
 }
 
 .space{
-    -webkit-animation: slide 8s linear infinite;
+     -webkit-animation: slide 8s linear infinite;
     -moz-animation: slide 8s linear infinite;
     -o-animation: slide 8s linear infinite;
     -ms-animation: slide 8s linear infinite;
-    animation: slide 8s infinite linear;
     background-image: url(../js/stars.svg);
+    background-repeat: repeat-x;
     background-position: center center;
     -webkit-background-size: 320px;
     -moz-background-size: 320px;
@@ -166,7 +166,12 @@ em{font-style:normal}
     bottom: 0;
     height: 100%;
     width: 320px;
-    z-index: 10000;
+    z-index: 10000; 
+    /* background-image: url(../js/stars.svg);
+    background-position: 0px 0px;
+    background-repeat: repeat-x; */
+
+    animation: slide 40s infinite infinite;
 }
 
 @-moz-keyframes slide {
