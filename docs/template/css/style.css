@@ -154,8 +154,9 @@ em{font-style:normal}
     -moz-animation: slide 8s linear infinite;
     -o-animation: slide 8s linear infinite;
     -ms-animation: slide 8s linear infinite;
+    /*animation: slide 8s infinite linear;*/
     background-image: url(../js/stars.svg);
-    background-repeat: repeat-x;
+    /*background-repeat: repeat-x;*/
     background-position: center center;
     -webkit-background-size: 320px;
     -moz-background-size: 320px;
