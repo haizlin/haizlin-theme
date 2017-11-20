@@ -6,7 +6,7 @@ li,ul{list-style:none}
 input,select,textarea{font-size:100%}
 table{border-collapse:collapse;border-spacing:0}
 th{text-align:inherit}
-a{text-decoration:none}
+a{text-decoration:none;}
 a:focus,a:hover{color:#cc752c;text-decoration:none}
 img,input{vertical-align:middle;border:0 none}
 em{font-style:normal}
@@ -43,8 +43,8 @@ em{font-style:normal}
 
 .wrap{}
 
-.main-left{text-align: center;}
-.main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 9999;}
+.wrap-left{z-index: 101;}
+.main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 99;text-align: center;}
 .main-left header{font-weight: bold;margin-top: 38px;}
 .main-left header .nickname{font-size: 24px;font-weight: bold;margin-top: 24px;}
 .main-left header .autograph{font-size: 16px;margin-top: 20px;}
@@ -64,7 +64,7 @@ em{font-style:normal}
 .main-left footer p{text-align: center;}
 .main-left footer a{color: #dd7b26;}
 
-.main-right{background: #ebebeb; margin-left: 320px;}
+.main-right{background: #ebebeb; margin-left: 320px;width: calc(100% - 320px);}
 .main-right .banner img{width: 100%;}
 .main-right .container{margin:27px 47px;}
 .main-right article.article-list{/* width:calc(100% - 269px); */margin-right: 269px;}
@@ -88,6 +88,12 @@ em{font-style:normal}
 .main-right article .page a{display: inline-block;margin: 0 8px;color: #434e60;}
 .main-right article .page .current{height: 24px;line-height: 24px;text-align: center;width: 24px;background: #434e60;color: #fff;}
 
+.main-right section{padding: 24px 48px 100px 42px;}
+.main-right section .sub-nav{ border-bottom: 1px solid #bebebe;text-align: right;padding:12px 0;}
+.main-right section .sub-nav a{ border-right: 1px solid #72767c;padding:0 23px;color:#2d3441; }
+.main-right section .sub-nav .current{color:#cc752c;}
+.main-right section .sub-nav a:last-child{border:none;}
+
 .main-right .sidebar{width: 252px;ba}
 .main-right .sidebar aside{background: #fff;margin-bottom: 22px;}
 .main-right .sidebar aside .title{height: 40px;line-height: 40px;padding-left: 12px;border-bottom: 1px solid #cbcbcb;font-size: 14px;color: #2d3441;font-weight: bold;}
@@ -109,10 +115,9 @@ em{font-style:normal}
     -webkit-background-size: 320px;
     -moz-background-size: 320px;
     background-size: 320px;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
-    bottom: 0;
     height: 100%;
     width: 320px;
     z-index: 100; 
