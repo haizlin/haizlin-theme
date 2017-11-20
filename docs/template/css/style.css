@@ -68,6 +68,9 @@ em{font-style:normal}
 .main-right .banner img{width: 100%;}
 .main-right .container{margin:27px 47px;}
 .main-right article.article-list{/* width:calc(100% - 269px); */margin-right: 269px;}
+.main-right article .article-wrap{background: #fff;padding:27px 43px 30px 37px;color:#040000;font-size: 14px;}
+.main-right article .article-wrap h1{color:#2d3441; font-size: 24px;font-weight: normal;}
+.main-right article .article-wrap .content{margin-top: 35px;}
 .main-right article li{margin-top: 27px;background: #fbfbfb;padding:25px 33px 0px 33px;}
 .main-right article .title{font-size: 24px;color: #dd7b26;}
 .main-right article .title a{color: #dd7b26;}
@@ -88,9 +91,11 @@ em{font-style:normal}
 .main-right article .page a{display: inline-block;margin: 0 8px;color: #434e60;}
 .main-right article .page .current{height: 24px;line-height: 24px;text-align: center;width: 24px;background: #434e60;color: #fff;}
 
-.main-right section{padding: 24px 48px 100px 42px;}
+/* 子导航 */
+.main-right section{padding: 24px 48px 0px 42px;}
 .main-right section .sub-nav{ border-bottom: 1px solid #bebebe;text-align: right;padding:12px 0;}
 .main-right section .sub-nav a{ border-right: 1px solid #72767c;padding:0 23px;color:#2d3441; }
+.main-right section .sub-nav a:hover{color:#cc752c;}
 .main-right section .sub-nav .current{color:#cc752c;}
 .main-right section .sub-nav a:last-child{border:none;}
 
