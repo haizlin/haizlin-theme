@@ -2,41 +2,41 @@
 
 > Haizlin-theme 是老婆给设计的一套非常简洁的扁平化博客模板，支持Hexo，有结构清晰的设计图。  
 > 以全屏为主，自适应屏幕，包括手机端。  
-> 如果你也喜欢这个主题，那就动动手指 [Star](https://github.com/haizlin/haizlin-theme/stargazers) 支持一下吧！  
+> 如果你也喜欢这个主题，那就动动手指 [Star](https://github.com/haizlin/blog-theme/stargazers) 支持一下吧！  
 
 ## 设计图(PSD)
-[查看](./docs/)
+[查看](./docs/psd)
 
 ## 预览
 [主题Blog预览](https://blog.haizlin.cn)
 
 > 效果图，先睹为快  
 
-- 首页([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Home.png))  
+- 首页([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Home.png))  
 
 ![Home](./docs/views/Home.png)
 
-- 列表页([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/List.png))  
+- 列表页([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/List.png))  
 
 ![List](./docs/views/List.png)
 
-- 内容页([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Content.png))  
+- 内容页([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Content.png))  
 
 ![Content](./docs/views/Content.png)
 
-- 读书([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Read.png))
+- 读书([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Read.png))
 
 ![Read](./docs/views/Read.png)
 
-- 关于([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/About.png))
+- 关于([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/About.png))
 
 ![About](./docs/views/About.png)
 
-- 作品([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Works.png))
+- 作品([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Works.png))
 
 ![Works](./docs/views/Works.png)
 
-- 历史([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/History.png))
+- 历史([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/History.png))
 
 ![History](./docs/views/History.png)
 
