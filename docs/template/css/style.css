@@ -19,8 +19,6 @@ em{font-style:normal}
 .tt-l{text-align:left !important}
 .tt-r{text-align:right !important}
 
-
-
 @media screen and (max-width: 768px){
     .main-left {
         display: none;
@@ -42,22 +40,6 @@ em{font-style:normal}
         margin-right: 0px !important;
     }
 }
-
-
-/* @media screen and (max-width: 768px) {
-  .main-container {
-    top: 45px;
-    left: 0px;
-    bottom: 0;
-    height: auto;
-  }
-  .main-content {
-    left: 0;
-    bottom: 0;
-    height: auto;
-    padding: 10px 10px;
-  }
-} */
 
 .wrap{}
 
@@ -116,48 +98,14 @@ em{font-style:normal}
 .main-right footer{background: #434e60;padding:19px 70px;font-size: 16px;color: #fff;}
 .main-right footer em{color: #eb8d50;}
 
-.className{  
-    -webkit-animation: twinkling 1s infinite ease-in-out  
-}  
-.animated{
-    -webkit-animation-duration: 1s;  
-    animation-duration: 1s;  
-    -webkit-animation-fill-mode: both;  
-    animation-fill-mode: both  
-}  
-@-webkit-keyframes twinkling{  
-    0%{  
-        opacity: 0.5;  
-    }  
-    100%{  
-        opacity: 1;  
-    }  
-}  
-@keyframes twinkling{  
-    0%{  
-        opacity: 0.5;  
-    }  
-    100%{  
-        opacity: 1;  
-    }  
-}  
-
-
-/* 用来实现动画的keyframes;  从0度旋转到360度 */
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
 .space{
-     -webkit-animation: slide 8s linear infinite;
+    -webkit-animation: slide 8s linear infinite;
     -moz-animation: slide 8s linear infinite;
     -o-animation: slide 8s linear infinite;
     -ms-animation: slide 8s linear infinite;
-    /*animation: slide 8s infinite linear;*/
+    animation: slide 8s linear infinite;
     background-image: url(../js/stars.svg);
-    /*background-repeat: repeat-x;*/
-    background-position: center center;
+    background-position: 0px 0px;
     -webkit-background-size: 320px;
     -moz-background-size: 320px;
     background-size: 320px;
@@ -167,82 +115,26 @@ em{font-style:normal}
     bottom: 0;
     height: 100%;
     width: 320px;
-    z-index: 10000; 
-    /* background-image: url(../js/stars.svg);
-    background-position: 0px 0px;
-    background-repeat: repeat-x; */
-
-    animation: slide 40s infinite infinite;
-}
-
-@-moz-keyframes slide {
-    0% {
-        -webkit-transform: translate3d(0,0,0);
-        -moz-transform: translate3d(0,0,0);
-        -o-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0)
-    }
-
-    100% {
-        -webkit-transform: translate3d(-320px,-320px,0);
-        -moz-transform: translate3d(-320px,-320px,0);
-        -o-transform: translate3d(-320px,-320px,0);
-        -ms-transform: translate3d(-320px,-320px,0);
-        transform: translate3d(-320px,-320px,0)
-    }
-}
-
-@-webkit-keyframes slide {
-    0% {
-        -webkit-transform: translate3d(0,0,0);
-        -moz-transform: translate3d(0,0,0);
-        -o-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0)
-    }
-
-    100% {
-        -webkit-transform: translate3d(-320px,-320px,0);
-        -moz-transform: translate3d(-320px,-320px,0);
-        -o-transform: translate3d(-320px,-320px,0);
-        -ms-transform: translate3d(-320px,-320px,0);
-        transform: translate3d(-320px,-320px,0)
-    }
-}
-
-@-o-keyframes slide {
-    0% {
-        -webkit-transform: translate3d(0,0,0);
-        -moz-transform: translate3d(0,0,0);
-        -o-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0)
-    }
-
-    100% {
-        -webkit-transform: translate3d(-320px,-320px,0);
-        -moz-transform: translate3d(-320px,-320px,0);
-        -o-transform: translate3d(-320px,-320px,0);
-        -ms-transform: translate3d(-320px,-320px,0);
-        transform: translate3d(-320px,-320px,0)
-    }
+    z-index: 100; 
 }
 
 @keyframes slide {
-    0% {
-        -webkit-transform: translate3d(0,0,0);
-        -moz-transform: translate3d(0,0,0);
-        -o-transform: translate3d(0,0,0);
-        -ms-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0)
-    }
-
-    100% {
-        -webkit-transform: translate3d(-320px,-320px,0);
-        -moz-transform: translate3d(-320px,-320px,0);
-        -o-transform: translate3d(-320px,-320px,0);
-        -ms-transform: translate3d(-320px,-320px,0);
-        transform: translate3d(-320px,-320px,0)
-    }
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
 }
+
+@-moz-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+}
+
+@-o-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+}
+

@@ -21,9 +21,9 @@
     <script src="https://cdn.bootcss.com/flexie/1.0.3/flexie.min.js"></script>
 </head>
 <body>
-    <div class="space"></div>
     <div class="wrap fn-c">
         <div class="main-left fn-l">
+            <div class="space"></div>
             <header>
                 <p class="logo"><img src="./images/logo.png"></p>
                 <p class="nickname">浪子神剑</p>
@@ -190,38 +190,5 @@
             </footer>
         </div>
     </div>
-
-    <style>  
-@-webkit-keyframes move  
-{  
-    0%{  
-        left:0;  
-    }  
-    100%  
-    {  
-        left:-500px;  
-    }     
-}  
-#wrap{ width:500px;height:100px;border:1px solid #000; position:relative;margin:100px auto; overflow:hidden;}  
-#list{ position:absolute;left:0;top:0;margin:0;padding:0; -webkit-animation:3s move infinite linear; width:200%;}  
-#list li{ list-style:none;width:98px;height:98px;border:1px solid #fff;background:#000; color:#fff; font:50px/98px Arial; text-align:center; float:left;}  
-#wrap:hover #list{ -webkit-animation-play-state:paused;}  
-</style>  
-</head>  
-<body>  
-<div id="wrap">  
-    <ul id="list">  
-        <li>1</li>  
-        <li>2</li>  
-        <li>3</li>  
-        <li>4</li>  
-        <li>5</li>  
-        <li>1</li>  
-        <li>2</li>  
-        <li>3</li>  
-        <li>4</li>  
-        <li>5</li>  
-    </ul>  
-</div>  
 </body>
 </html>
