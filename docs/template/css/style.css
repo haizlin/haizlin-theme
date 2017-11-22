@@ -99,6 +99,10 @@ em{font-style:normal}
 .main-right section .sub-nav .current{color:#cc752c;}
 .main-right section .sub-nav a:last-child{border:none;}
 
+/* 读书列表 */
+.main-right .read-list{}
+.main-right .read-list li{float: left;width: 252px;height: 335px;}
+
 .main-right .sidebar{width: 252px;ba}
 .main-right .sidebar aside{background: #fff;margin-bottom: 22px;}
 .main-right .sidebar aside .title{height: 40px;line-height: 40px;padding-left: 12px;border-bottom: 1px solid #cbcbcb;font-size: 14px;color: #2d3441;font-weight: bold;}
