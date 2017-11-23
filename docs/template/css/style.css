@@ -70,7 +70,9 @@ em{font-style:normal}
 .main-right article.article-list{/* width:calc(100% - 269px); */margin-right: 269px;}
 .main-right article .article-wrap{background: #fff;padding:27px 43px 30px 37px;color:#040000;font-size: 14px;}
 .main-right article .article-wrap h1{color:#2d3441; font-size: 24px;font-weight: normal;}
-.main-right article .article-wrap .content{margin-top: 35px;}
+.main-right article .article-wrap .date{color: #666;margin-top: 10px;font-size: 14px;}
+.main-right article .article-wrap .view{margin-left: 45px;}
+.main-right article .article-wrap .content{margin-top: 35px;line-height: 24px;color: #040000;font-size: 14px;}
 .main-right article li{margin-top: 27px;background: #fbfbfb;padding:25px 33px 0px 33px;}
 .main-right article .title{font-size: 24px;color: #dd7b26;}
 .main-right article .title a{color: #dd7b26;}
@@ -78,6 +80,7 @@ em{font-style:normal}
 .main-right article .description{font-size: 14px;color: #040000;line-height: 26px;margin-top: 24px;margin-bottom: 20px;}
 .main-right article .description span{margin-left: 24px;}
 .main-right article .tag{font-size: 14px;color: #fff;border-top: 1px solid #d1d6d6;height: 38px;line-height: 38px;}
+.main-right article .content-tag{margin-top: 37px;margin-bottom: 28px; border:none;}
 .main-right article .tag span{background: #ea8b4c;padding:0 9px;text-align: center;height: 22px;line-height: 22px;display: inline-block;border-radius: 10px;margin-right: 10px;}
 .main-right article .tag span a{color: #fff;}
 .main-right article .tag span:nth-child(1){background: #ea8b4c;}
@@ -90,6 +93,7 @@ em{font-style:normal}
 .main-right article .page{margin: 50px 0;color: #434e60;font-size: 12px;text-align: center;}
 .main-right article .page a{display: inline-block;margin: 0 8px;color: #434e60;}
 .main-right article .page .current{height: 24px;line-height: 24px;text-align: center;width: 24px;background: #434e60;color: #fff;}
+.main-right article .prev-next a{color:#434e60;}
 
 /* 子导航 */
 .main-right section{padding: 24px 48px 0px 42px;}
