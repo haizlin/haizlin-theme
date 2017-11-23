@@ -40,6 +40,10 @@
 
 ![History](./docs/views/History.png)
 
+- 404([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/404.png))
+> 使用了[腾讯公益](http://www.qq.com/404/)的404页面
+![404](./docs/views/404.png)
+
 ## 主题特点
 
 - [x] 样式支持CSS预处理器scss，方便主题自定义
