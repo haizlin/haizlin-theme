@@ -1,10 +1,12 @@
-# Haizlin-theme
+# Haizlin-theme 博客模板
 
-> Haizlin-theme 是老婆给设计的一套非常简洁的扁平化博客模板，支持Hexo，有结构清晰的设计图。  
-> 以全屏为主，自适应屏幕，包括手机端。  
+> Haizlin-theme 是我宝贝老婆业余时间给我设计的一套非常简洁的扁平化博客模板，支持Hexo，有结构清晰的设计图。  
+> 以全屏为主，自适应移动端。  
 > 如果你也喜欢这个主题，那就动动手指 [Star](https://github.com/haizlin/blog-theme/stargazers) 支持一下吧！  
 
 ## 设计图(PSD)
+> 设计理念：
+
 [查看](./docs/psd)
 
 ## 预览
@@ -42,6 +44,7 @@
 
 - 404([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/404.png))
 > 使用了[腾讯公益](http://www.qq.com/404/)的404页面
+
 ![404](./docs/views/404.png)
 
 ## 主题特点
@@ -63,6 +66,9 @@
 - [x] 支持Shell脚本一键使用Travis CI持续部署Hexo博客
 
 ## 浏览器支持
+本想支持IE6-IE8的，但后面觉得能进到这里面的估计只有技术员了吧，我相信做为一个合格的技术员都不愿意再使用IE6-IE8了，所以结论是只支持现代浏览器
+
+> Chrome/Firefox/Opera/Safari/IE10+  
 
 ## 使用
 
@@ -74,4 +80,3 @@
 
 ## License
 [MIT](/LICENSE)
-
