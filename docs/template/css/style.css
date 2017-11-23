@@ -101,7 +101,9 @@ em{font-style:normal}
 
 /* 读书列表 */
 .main-right .read-list{}
-.main-right .read-list li{float: left;width: 252px;height: 335px;}
+.main-right .read-list li{float: left;width: 252px;height: 335px;font-size: 14px;background: #fff;margin-right: 52px;margin-bottom: 20px;text-align: center;}
+.main-right .read-list li a{color: #2d3441;}
+.main-right .read-list li .title{margin-top: 30px;}
 
 .main-right .sidebar{width: 252px;ba}
 .main-right .sidebar aside{background: #fff;margin-bottom: 22px;}
