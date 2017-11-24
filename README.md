@@ -42,6 +42,22 @@
 
 ![History](./docs/views/History.png)
 
+- 标签([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Tags.png))
+
+![Tags](./docs/views/Tags.png)
+
+- 时间归档([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Times.png))
+
+![Times](./docs/views/Times.png)
+
+- 工具([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Tools.png))
+
+![Tools](./docs/views/Tools.png)
+
+- 搜索([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Search.png))
+
+![Search](./docs/views/Search.png)
+
 - 404([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/404.png))
 > 使用了[腾讯公益](http://www.qq.com/404/)的404页面
 
