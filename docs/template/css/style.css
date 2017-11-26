@@ -81,7 +81,7 @@ em{font-style:normal}
 .main-right article .title a:hover{font-weight:bold;text-decoration: underline;}
 .main-right article .description{font-size: 14px;color: #040000;line-height: 26px;margin-top: 24px;margin-bottom: 20px;}
 .main-right article .description span{margin-left: 24px;}
-.main-right article .tag{font-size: 14px;color: #fff;border-top: 1px solid #d1d6d6;height: 38px;line-height: 38px;}
+.main-right article .tag{font-size: 14px;color: #fff;border-top: 1px solid #d1d6d6;line-height: 38px;}
 .main-right article .content-tag{margin-top: 37px;margin-bottom: 28px; border:none;}
 .main-right article .tag span{background: #ea8b4c;padding:0 9px;text-align: center;height: 22px;line-height: 22px;display: inline-block;border-radius: 10px;margin-right: 10px;}
 .main-right article .tag span a{color: #fff;}
