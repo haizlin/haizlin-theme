@@ -122,6 +122,10 @@ em{font-style:normal}
 .main-right .article-tags span:nth-child(5){background: #814fcb;}
 .main-right .article-tags span:nth-child(6){background: #cb4fb8;}
 
+/* 工具资源 */
+.main-right .article-tools{}
+.main-right .article-tools .title{}
+
 /* 关于 */
 .main-right .container-about .info{margin-left: 73px;}
 .main-right .container-about .detail{margin-left: 51px;font-size: 18px;color: #2d3441;line-height: 36px;}
