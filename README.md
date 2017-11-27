@@ -46,9 +46,9 @@
 
 ![Tags](./docs/views/Tags.png)
 
-- 时间归档([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Times.png))
+- 时间归档([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Archives.png))
 
-![Times](./docs/views/Times.png)
+![Archives](./docs/views/Archives.png)
 
 - 工具([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Tools.png))
 

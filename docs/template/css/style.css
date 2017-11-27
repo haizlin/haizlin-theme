@@ -42,6 +42,10 @@ em{font-style:normal}
     }
 }
 
+@media only screen and (max-width: 320px) {
+    .main-right .container{margin:0 !important;}
+}
+
 .wrap{}
 
 .wrap-left{z-index: 101;}
@@ -75,7 +79,7 @@ em{font-style:normal}
 .main-right article .article-wrap .date{color: #666;margin-top: 10px;font-size: 14px;}
 .main-right article .article-wrap .view{margin-left: 45px;}
 .main-right article .article-wrap .content{margin-top: 35px;line-height: 24px;color: #040000;font-size: 14px;}
-.main-right article li{margin-top: 27px;background: #fbfbfb;padding:25px 33px 0px 33px;}
+.main-right article .index-list li{margin-top: 27px;background: #fbfbfb;padding:25px 33px 0px 33px;}
 .main-right article .title{font-size: 24px;color: #dd7b26;}
 .main-right article .title a{color: #dd7b26;}
 .main-right article .title a:hover{font-weight:bold;text-decoration: underline;}
@@ -98,6 +102,15 @@ em{font-style:normal}
 .main-right article .share{text-align: right;height: 16px;margin-bottom: 30px;}
 .main-right article .share .jiathis_style{display: inline-block;}
 .main-right article .prev-next a{color:#434e60;}
+
+/* 时间归档 */
+.main-right .archives .times-list{margin-bottom: 30px;background: #fff;padding:9px 0 18px 29px;}
+.main-right .archives .times-list .year{color: #dd7b26;font-size: 36px;margin-right: 32px;}
+.main-right .archives .times-list ul{width:calc(100% - 130px);}
+.main-right .archives .times-list li{border-bottom: 1px solid #d1d6d6;clear: both;padding:15px 0;}
+.main-right .archives .times-list li a{font-size: 18px;color: #666;width:calc(100% - 120px);display: inline-block;line-height: 24px;}
+.main-right .archives .times-list li a:hover{color: #dd7b26;}
+.main-right .archives .times-list li span{font-size: 14px;color: #666;float: right;background: url(../images/btn_date.png) no-repeat center left;padding-left: 32px;margin-right: 29px;display: inline-block;}
 
 /* 关于 */
 .main-right .container-about .info{margin-left: 73px;}
