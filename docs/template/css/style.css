@@ -10,6 +10,12 @@ a{text-decoration:none;}
 a:focus,a:hover{color:#cc752c;text-decoration:none}
 img,input{vertical-align:middle;border:0 none}
 em{font-style:normal}
+/* 自定义滚动条 */
+::-webkit-scrollbar {width: 8px;height: 8px;-webkit-appearance: none;}
+::-webkit-scrollbar-track {background-color: inherit;}
+::-webkit-scrollbar-thumb {border: 1px solid #fff;border-radius: 10px;background-color: #999;}
+::-webkit-scrollbar-thumb:hover {background-color: #808080;}
+::-webkit-scrollbar-thumb:active {background-color: #666;}
 .fn-c{zoom:1}
 .fn-c:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;zoom:1}
 .fn-l{float:left !important}
@@ -135,7 +141,7 @@ em{font-style:normal}
 .main-right .article-tools li .view a{color: #fff;background: #5791e6;padding:5px;border-radius: 10px;}
 
 /* 历史记录 */
-.main-right .history-list{margin-bottom: 155px;font-size: 14px;color: #404651;position: relative;}
+.main-right .history-list{margin-bottom: 155px;font-size: 14px;color: #404651;position: relative;margin-left: 17px;margin-top: 34px;}
 .main-right .history-list ul::before{content: '';position: absolute;display: block;width: 4px;background: #e2e2e3;top: 63px;bottom: 50px;margin-left: 10px;}
 .main-right .history-list li{margin-bottom: 20px;height: auto;position: relative;}
 .main-right .history-list .number{background: #ebebeb;color: #737881;display: block;width: 32px;height: 32px;-webkit-background-clip: padding-box;-moz-background-clip: padding;background-clip: padding-box;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;text-align: center;border: 4px solid #e4e4e5;line-height: 32px;font-size: 15px;position: absolute;top: 50%;margin-top: -20px;margin-left: -9px;}
