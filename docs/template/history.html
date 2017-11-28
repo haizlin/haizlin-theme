@@ -11,14 +11,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>List</title>
-    <meta content="List" name="keywords">
-    <meta content="List" name="description">
+    <title>History</title>
+    <meta content="History" name="keywords">
+    <meta content="History" name="description">
     <link rel="shortcut icon" href="/favicon.ico"/>
     <link rel="bookmark" href="/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-    <script src="https://cdn.bootcss.com/flexie/1.0.3/flexie.min.js"></script>
+    <script src="./js/flexie.min.js"></script>
 </head>
 <body>
     <div class="wrap fn-c">
@@ -26,7 +26,7 @@
             <div class="space"></div>
             <div class="left-list">
                 <header>
-                    <p class="logo"><img src="./images/logo.png"></p>
+                    <p class="logo"><a href="#"><img src="./images/logo.png"></a></p>
                     <p class="nickname">浪子神剑</p>
                     <p class="autograph">越简单越快乐, 越努力越幸运!</p>
                 </header>
@@ -73,68 +73,37 @@
 
             <section>
                 <nav class="sub-nav">
-                    <a href="#" class="current">前端</a>
-                    <a href="#">PHP</a>
-                    <a href="#">Linux</a>
-                    <a href="#">后端</a>
-                    <a href="#">数据库</a>
+                    <a href="./about.html">关于</a>
+                    <a href="./works.html">作品</a>
+                    <a href="./read.html">读书</a>
+                    <a href="./history.html" class="current">历史</a>
                 </nav>
             </section>
-            
-            <div class="container fn-c">
-                <div class="sidebar fn-r">
-                    <aside>
-                        <p class="title">最新文章</p>
-                        <ul>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                        </ul>
-                    </aside>
 
-                    <aside>
-                        <a href="#"><img src="./images/ad.png" alt="广告"></a>
-                    </aside>
-
-                    <aside>
-                        <p class="title">云标签</p>
-                        <ul>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                            <li><a href="#">Linux之间常用共享服务NFS</a></li>
-                        </ul>
-                    </aside>
-                </div>
-
-                <article class="article-list">
-                    tools...
-
-                    <div class="page">
-                        <a href="#">上一页</a>
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#" class="current">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <span>...</span>
-                        <a href="#">下一页</a>
-                    </div>
-                </article>
-            </div>
+            <section class="history-list">
+                <ul>
+                    <li class="fn-c">
+                        <p class="number fn-l"><span>1</span></p>
+                        <p class="text fn-l"><span>2010.09 - 毕业那年，使用wordpress搭建了人生中的第一个博客</span></p>
+                    </li>
+                    <li class="fn-c">
+                        <p class="number fn-l"><span>2</span></p>
+                        <p class="text fn-l"><span>2010.06 - 测试数据测试数据</span></p>
+                    </li>
+                    <li class="fn-c">
+                        <p class="number fn-l"><span>3</span></p>
+                        <p class="text fn-l"><span>2011.03 - 测试数据测试数据</span></p>
+                    </li>
+                    <li class="fn-c">
+                        <p class="number fn-l"><span>4</span></p>
+                        <p class="text fn-l"><span>2010.03 - 测试数据测试数据</span></p>
+                    </li>
+                    <li class="fn-c">
+                        <p class="number fn-l"><span>5</span></p>
+                        <p class="text fn-l"><span>2010.03 - 测试数据测试数据</span></p>
+                    </li>
+                </ul>
+            </section>
 
             <footer class="fn-c">
                 <span class="fn-l">您好，您是本站点的第 <em>3957</em> 位访客，祝您生活工作愉快!</span>

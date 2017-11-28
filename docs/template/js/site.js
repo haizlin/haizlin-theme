@@ -12,26 +12,24 @@ $('#search-text').click(function() {
 });
 
 // 微信扫一扫
-$('.social .weixin').hover(function(){
+$('.social .weixin').hover(function() {
     $('#weixin-qrcode').fadeIn(200);
-}, function(){
+}, function() {
     $('#weixin-qrcode').fadeOut(200);
 });
 
 // 如果正文高度不够高时，底部固定在最底
-$(function(){
+$(function() {
     var resizeTimer;
 
     function footerHeight() {
         var winHeight = $(window).height();
         var rightHeight = $('.main-right').outerHeight(true);
         var articleHeight = $('.container article').height();
-        var footerHeight = $('.main-right footer').outerHeight(true);
-        console.log(winHeight, rightHeight, articleHeight, footerHeight);
 
         if (rightHeight <= winHeight) {
             var _height = winHeight - rightHeight + articleHeight + 'px';
-            
+
             $('.container article').height(_height);
         }
     };
@@ -42,4 +40,13 @@ $(function(){
     });
 
     footerHeight();
+});
+
+// 标签云
+var tagsObj = $("#tags-list a");
+tagsObj.each(function() {
+    var x = 11;
+    var y = 1;
+    var rand = parseInt(Math.random() * (x - y + 1) + y, 10);
+    $(this).addClass("size" + rand);
 });
