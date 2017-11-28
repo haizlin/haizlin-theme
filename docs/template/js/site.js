@@ -26,8 +26,6 @@ $(function(){
         var winHeight = $(window).height();
         var rightHeight = $('.main-right').outerHeight(true);
         var articleHeight = $('.container article').height();
-        var footerHeight = $('.main-right footer').outerHeight(true);
-        console.log(winHeight, rightHeight, articleHeight, footerHeight);
 
         if (rightHeight <= winHeight) {
             var _height = winHeight - rightHeight + articleHeight + 'px';
