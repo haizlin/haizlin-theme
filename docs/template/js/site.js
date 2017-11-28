@@ -11,6 +11,13 @@ $('#search-text').click(function() {
     });
 });
 
+// 微信扫一扫
+$('.social .weixin').hover(function(){
+    $('#weixin-qrcode').fadeIn(200);
+}, function(){
+    $('#weixin-qrcode').fadeOut(200);
+});
+
 // 如果正文高度不够高时，底部固定在最底
 $(function(){
     var resizeTimer;
