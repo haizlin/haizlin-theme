@@ -1,63 +1,139 @@
-// 个人简介
-try {
-    if (window.console && window.console.log) {
-        console.log("^_^ 你来了！这都被你发现！");
-        console.log("^_^ %c越简单越快乐！越努力越幸运！", 'color:green;');
-        console.log("^_^ 非常感谢我亲爱地媳妇，在百忙这中为此博客做了全新的设计!!!");
-        console.log("^_^ 博客的源码及设计图(PSD)全部开源(欢迎Star)：%chttps://github.com/haizlin/blog-theme", "color:red;");
-        console.log("^_^ 联系我可以发邮件：%c 80285586@qq.com", "color:green;font-weight:bold;");
-    }
-} catch (e) {};
+/**
+ * haizlin 博客模板
+ * author: 浪子神剑
+ * email: 80285586@qq.com
+ * github: https://github.com/haizlin/blog-theme
+ * version: v1.0
+ */
 
-// 搜索框弹窗
-$('#search-text').click(function() {
-    layer.open({
-        type: 1,
-        title: '搜索',
-        skin: 'layui-layer-search', //样式类名
-        shadeClose: true,
-        shade: 0.8,
-        area: ['650px', '486px'],
-        content: '这是搜索框的内容'
-    });
-});
+var HzlBlog = {
+    init: function() {
+        /*this.toc().scroll(0);
+        this.toc().go();
+        this.scroll();
+        this.resize();
+        this.goTop().active();
+        */
+        this.tags();
+        this.weinxin();
+        this.console();
+        this.footer();
+        this.search();
+    },
 
-// 微信扫一扫
-$('.social .weixin').hover(function() {
-    $('#weixin-qrcode').fadeIn(200);
-}, function() {
-    $('#weixin-qrcode').fadeOut(200);
-});
+    tags: function() {
+        var tagsObj = $("#tags-list a");
+        tagsObj.each(function() {
+            var x = 11;
+            var y = 1;
+            var rand = parseInt(Math.random() * (x - y + 1) + y, 10);
+            $(this).addClass("size" + rand);
+        });
+    },
 
-// 如果正文高度不够高时，底部固定在最底
-$(function() {
-    var resizeTimer;
+    console: function() {
+        try {
+            if (window.console && window.console.log) {
+                console.log("^_^ 你来了！这都被你发现！");
+                console.log("^_^ %c越简单越快乐！越努力越幸运！", 'color:green;');
+                console.log("^_^ 非常感谢我亲爱地媳妇，在百忙这中为此博客做了全新的设计!!!");
+                console.log("^_^ 博客的源码及设计图(PSD)全部开源(欢迎Star及Pull Request)：%chttps://github.com/haizlin/blog-theme", "color:red;");
+                console.log("^_^ 联系我可以发邮件：%c 80285586@qq.com", "color:green;font-weight:bold;");
+            }
+        } catch (e) {};
+    },
 
-    function footerHeight() {
-        var winHeight = $(window).height();
-        var rightHeight = $('.main-right').outerHeight(true);
-        var articleHeight = $('.container article').height();
+    footer: function() {
+        var resizeTimer;
 
-        if (rightHeight <= winHeight) {
-            var _height = winHeight - rightHeight + articleHeight + 'px';
+        function footerHeight() {
+            var winHeight = $(window).height();
+            var rightHeight = $('.main-right').outerHeight(true);
+            var articleHeight = $('.container article').height();
 
-            $('.container article').height(_height);
+            if (rightHeight <= winHeight) {
+                var _height = winHeight - rightHeight + articleHeight + 'px';
+
+                $('.container article').height(_height);
+            }
+        };
+
+        $(window).resize(function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(footerHeight, 250);
+        });
+
+        footerHeight();
+    },
+
+    search: function() {
+        $('#search-text').click(function() {
+            layer.open({
+                type: 1,
+                title: '搜索',
+                skin: 'layui-layer-search', //样式类名
+                shadeClose: true,
+                shade: 0.8,
+                area: ['650px', '486px'],
+                content: '这是搜索框的内容'
+            });
+        });
+
+    },
+
+    weinxin: function() {
+        // 微信扫一扫
+        $('.social .weixin').hover(function() {
+            $('#weixin-qrcode').fadeIn(200);
+        }, function() {
+            $('#weixin-qrcode').fadeOut(200);
+        });
+    },
+
+    toc: function() {
+        var toc = $('#post-toc');
+        return {
+            scroll: function(top) {
+                if (!toc.length) return;
+                $.toc().fixed(top);
+                $.toc().actived(top);
+            },
+            go: function() {
+                if (!toc.length) {
+                    $('.post-article').css("width", "100%");
+                    return;
+                };
+                $.toc().go();
+            }
         }
-    };
+    },
+    goTop: function() {
+        return {
+            active: function() {
+                $.toggleGoTop().active();
+            },
+            scroll: function(top) {
+                $.toggleGoTop().scroll(top);
+            }
+        }
+    },
 
-    $(window).resize(function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(footerHeight, 250);
-    });
+    scroll: function() {
+        $(window).scroll(function() {
+            var top = $(window).scrollTop();
+            $.BLOG.toc().scroll(top);
+            $.BLOG.header(top);
+            $.BLOG.goTop().scroll(top);
+            $.BLOG.waterfall();
+        });
+    },
+    resize: function() {
+        $(window).resize(function() {
+            var top = $(window).scrollTop();
+            $.BLOG.toc().scroll(top);
+            $.BLOG.search().zoom();
+        });
+    }
+};
 
-    footerHeight();
-});
-
-// 文章标签
-var tagsObj = $("#tags-list a");
-tagsObj.each(function() {
-    var x = 11;
-    var y = 1;
-    var rand = parseInt(Math.random() * (x - y + 1) + y, 10);
-    $(this).addClass("size" + rand);
-});
+HzlBlog.init();
