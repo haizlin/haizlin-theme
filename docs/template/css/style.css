@@ -193,7 +193,7 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .history-list .text::after{content: '';display: block;position: absolute;width: 0;height: 0;border-style: solid;border-width: 9px 9px 9px 0;border-color: transparent #dcdcdb transparent transparent;left: 0;top: 50%;margin-top: -9px;margin-left: -9px;}
 
 /* 关于 */
-.main-right .container-about{margin-top: 59px;}
+.main-right .container-about{padding: 59px 0;background: #fff;}
 .main-right .container-about .info{margin-left: 73px;}
 .main-right .container-about .info p{text-align: center;margin-top: 10px;}
 .main-right .container-about .detail{margin-left: 51px;font-size: 18px;color: #2d3441;line-height: 36px;}
