@@ -17,6 +17,7 @@ var HzlBlog = {
         this.goTop().scroll();
         this.goTop().active();
         this.tags();
+        this.nav();
         this.weinxin();
         this.console();
         this.footer();
@@ -30,6 +31,13 @@ var HzlBlog = {
             var y = 1;
             var rand = parseInt(Math.random() * (x - y + 1) + y, 10);
             $(this).addClass("size" + rand);
+        });
+    },
+
+    nav: function() {
+        $('.main-left nav li').hover(function() {
+            $('.main-left nav li').removeClass('current');
+            $(this).addClass('current');
         });
     },
 

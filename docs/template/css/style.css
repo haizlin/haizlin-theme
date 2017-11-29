@@ -95,8 +95,6 @@ em{font-style:normal}
 .main-left nav{margin-top: 26px;}
 .main-left nav li{height: 48px;line-height: 48px;font-size: 18px;color: #fff;}
 .main-left nav li a{color: #fff;}
-.main-left nav li:hover{background: #ebebeb;}
-.main-left nav li:hover a{color: #cc752c;}
 .main-left nav li.current{background: #ebebeb;}
 .main-left nav li.current a{color: #cc752c;}
 
@@ -126,13 +124,7 @@ em{font-style:normal}
 .main-right article .description span a{color: #295dab;}
 .main-right article .tag{font-size: 14px;color: #fff;border-top: 1px solid #d1d6d6;line-height: 38px;}
 .main-right article .content-tag{margin-top: 37px;margin-bottom: 28px; border:none;}
-.main-right article .tag a{padding:0 9px;text-align: center;height: 22px;line-height: 22px;display: inline-block;border-radius: 10px;margin-right: 10px;color: #295dab;}
-/* .main-right article .tag a:nth-child(1){background: #ea8b4c;}
-.main-right article .tag a:nth-child(2){background: #4f8ecb;}
-.main-right article .tag a:nth-child(3){background: #adcb4f;}
-.main-right article .tag a:nth-child(4){background: #cb664f;}
-.main-right article .tag a:nth-child(5){background: #814fcb;}
-.main-right article .tag a:nth-child(6){background: #cb4fb8;} */
+.main-right article .tag a{padding:0 9px;text-align: center;height: 22px;line-height: 22px;display: inline-block;border-radius: 10px;color: #295dab;}
 .main-right article .tag-date{font-size: 14px;color: #666;background: none;}
 .main-right article .page{margin: 50px 0;color: #434e60;font-size: 12px;text-align: center;}
 .main-right article .page a{display: inline-block;margin: 0 8px;color: #434e60;}
@@ -231,7 +223,7 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .sidebar aside li a:hover{color: #dd7b26;}
 
 .main-right .sidebar aside .tag-list{padding:12px 8px 10px 14px;}
-.main-right .sidebar aside .tag-list a{margin-right: 5px;margin-bottom: 10px;color: #fff;padding:5px 12px;display: inline-block;color:#2d3441;}
+.main-right .sidebar aside .tag-list a{margin-right: 5px;margin-bottom: 10px;padding:5px 12px;display: inline-block;color:#2d3441;font-size:12px;}
 .main-right .sidebar aside .tag-list a:hover{color:#ccc;}
 
 .main-right footer{background: #434e60;padding:19px 70px;font-size: 16px;color: #fff;}
