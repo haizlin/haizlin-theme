@@ -53,7 +53,7 @@ $(function() {
     footerHeight();
 });
 
-// 标签云
+// 文章标签
 var tagsObj = $("#tags-list a");
 tagsObj.each(function() {
     var x = 11;
