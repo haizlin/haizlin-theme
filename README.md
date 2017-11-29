@@ -58,6 +58,10 @@
 
 ![Search](./docs/views/Search.png)
 
+- 站点地图([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Sitemap.png))
+
+![Sitemap](./docs/views/Sitemap.png)
+
 - 404([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/404.png))
 > 使用了[腾讯公益](http://www.qq.com/404/)的404页面
 
@@ -69,9 +73,10 @@
 - [x] flex布局
 - [x] 扁平化设计
 - [x] 文章阅读进度条
-- [x] 网站公告功能
+- [x] 网站公告功能(使用了banner推荐网站公告)
 - [x] 首页图片懒加载
 - [x] 首页文章缩略图自动检索文章内图片，支持自动随机图片
+- [x] 支持阅读进度条
 - [x] 支持响应式
 - [x] 对IE浏览器的检测和警告
 - [x] 评论系统支持友言和Gitment

@@ -53,6 +53,7 @@ em{font-style:normal}
 }
 
 .wrap{}
+.scrollgress{z-index: 1000;}
 
 .wrap-left{z-index: 101;}
 .main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 99;text-align: center;}
@@ -114,7 +115,9 @@ em{font-style:normal}
 .main-right article .page .current{height: 24px;line-height: 24px;text-align: center;width: 24px;background: #434e60;color: #fff;}
 .main-right article .share{text-align: right;height: 16px;margin-bottom: 30px;}
 .main-right article .share .jiathis_style{display: inline-block;}
+.main-right article .prev-next{margin-bottom: 15px;}
 .main-right article .prev-next a{color:#434e60;}
+.main-right article .copyright{color: #666;}
 
 /* 时间归档 */
 .main-right .archives .times-list{margin-bottom: 30px;background: #fff;padding:9px 0 18px 29px;}
@@ -175,6 +178,7 @@ em{font-style:normal}
 .main-right .container-about .introduce{margin-top: 30px;border-top: 1px solid #d1d6d6;padding-top: 20px;padding-left: 73px;}
 .main-right .container-about .introduce h2{margin: 20px 0 10px 0;font-weight: normal;}
 .main-right .container-about .introduce p{line-height: 28px;}
+.main-right .container-about .introduce .update{margin-top: 30px;}
 
 /* 子导航 */
 .main-right section{padding: 24px 48px 0px 42px;}
