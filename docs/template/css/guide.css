@@ -1,3 +1,16 @@
+body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,legend,ol,p,select,td,textarea,th,ul{margin:0;padding:0}
+audio,canvas,img,svg,video{max-width:100%;vertical-align:middle}
+body{font-family:Roboto,sans-serif,"微软雅黑","Microsoft YaHei",arial,"Helvetica Neue";position:relative;background: #ebebeb;}
+body,html{height:100%;width:100%;}
+li,ul{list-style:none}
+input,select,textarea{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+th{text-align:inherit}
+a{text-decoration:none;}
+a:focus,a:hover{color:#cc752c;text-decoration:none}
+img,input{vertical-align:middle;border:0 none}
+em{font-style:normal}
+
 #menu { position: fixed; right: 20px; top: 50%; width: 90px; margin: -160px 0 0; padding: 0; list-style-type: none; z-index: 70;}
 #menu li { margin-top: 10px; font: 14px "Microsoft Yahei";}
 #menu a { display: block; padding: 10px 0; background-color: #fff; color: #0074EA; text-align: center; text-decoration: none;}

@@ -71,6 +71,8 @@ em{font-style:normal}
 .size10{background: #63809d;font-size:20px;}
 .size11{background: #3fa055;font-size:22px;}
 .scrollgress{z-index: 1000;}
+.return-top{background: url(../images/btn_returntop.png) no-repeat; position: fixed;right: 30px;bottom: 80px;color: #fff;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;z-index: 999;width: 17px;height: 41px;display: none;}
+.return-top:hover{}
 
 .wrap-left{z-index: 101;}
 .main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 99;text-align: center;}

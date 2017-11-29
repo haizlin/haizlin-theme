@@ -10,10 +10,12 @@ var HzlBlog = {
     init: function() {
         /*this.toc().scroll(0);
         this.toc().go();
-        this.scroll();
+        
         this.resize();
-        this.goTop().active();
+        
         */
+        this.goTop().scroll();
+        this.goTop().active();
         this.tags();
         this.weinxin();
         this.console();
@@ -44,7 +46,7 @@ var HzlBlog = {
     },
 
     footer: function() {
-        var resizeTimer;
+        var resizeTimer = null;
 
         function footerHeight() {
             var winHeight = $(window).height();
@@ -78,7 +80,6 @@ var HzlBlog = {
                 content: '这是搜索框的内容'
             });
         });
-
     },
 
     weinxin: function() {
@@ -107,13 +108,37 @@ var HzlBlog = {
             }
         }
     },
+    // 返回顶部
     goTop: function() {
+        var _this = this;
+
         return {
             active: function() {
-                $.toggleGoTop().active();
+                _this.toggleGoTop().active();
             },
             scroll: function(top) {
-                $.toggleGoTop().scroll(top);
+                _this.toggleGoTop().scroll(top);
+            }
+        }
+    },
+    toggleGoTop: function() {
+        var returnTop = $('#return-top');
+
+        return {
+            active: function() {
+                returnTop.click(function() {
+                    $('body,html').stop(true, false);
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 300);
+                });
+            },
+            scroll: function(top) {
+                if (top > $(document).height() / 5) {
+                    returnTop.addClass('in');
+                } else {
+                    returnTop.removeClass('in');
+                }
             }
         }
     },
