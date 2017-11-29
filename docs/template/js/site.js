@@ -1,3 +1,14 @@
+// 个人简介
+try {
+    if (window.console && window.console.log) {
+        console.log("^_^ 你来了！这都被你发现！");
+        console.log("^_^ %c越简单越快乐！越努力越幸运！", 'color:green;');
+        console.log("^_^ 非常感谢我亲爱地媳妇，在百忙这中为此博客做了全新的设计!!!");
+        console.log("^_^ 博客的源码及设计图(PSD)全部开源(欢迎Star)：%chttps://github.com/haizlin/blog-theme", "color:red;");
+        console.log("^_^ 联系我可以发邮件：%c 80285586@qq.com", "color:green;font-weight:bold;");
+    }
+} catch (e) {};
+
 // 搜索框弹窗
 $('#search-text').click(function() {
     layer.open({
