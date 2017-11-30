@@ -110,8 +110,8 @@ em{font-style:normal}
 .main-left .social a{margin-right: 23px;}
 .main-left .social .weixin-qrcode{display: none;position: absolute;top: 46px;left:53px;background: #ebebeb;border-radius: 5px;padding:15px;color: #dd7b26;}
 .main-left .social .weixin-qrcode p{margin-bottom: 10px;}
-.main-left .social img{transition:All 0.4s ease-in-out;}
-.main-left .social img:hover{transform:scale(1.2);}
+.main-left .social a>img{transition:All 0.4s ease-in-out;}
+.main-left .social a>img:hover{transform:scale(1.2);}
 
 .main-left nav{margin-top: 26px;}
 .main-left nav a{height: 48px;line-height: 48px;font-size: 18px;color: #fff;display: block;}
@@ -212,9 +212,10 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .container-about .detail a{color:#407094;}
 .main-right .container-about .detail p{padding-left: 46px;height:30px;margin-bottom: 20px;}
 .main-right .container-about .detail .name{background:url(../images/icon.png) no-repeat 0px 0px;}
-.main-right .container-about .detail .tel{background:url(../images/icon.png) no-repeat 0px -30px;}
-.main-right .container-about .detail .email{background:url(../images/icon.png) no-repeat 0px -60px;}
-.main-right .container-about .detail .love{background:url(../images/icon.png) no-repeat 0px -90px;}
+.main-right .container-about .detail .location{background:url(../images/icon.png) no-repeat 0px -30px;}
+.main-right .container-about .detail .tel{background:url(../images/icon.png) no-repeat 0px -60px;}
+.main-right .container-about .detail .email{background:url(../images/icon.png) no-repeat 0px -90px;}
+.main-right .container-about .detail .love{background:url(../images/icon.png) no-repeat 0px -120px;}
 .main-right .container-about .introduce{margin-top: 30px;border-top: 1px solid #d1d6d6;padding-top: 20px;padding-left: 73px;}
 .main-right .container-about .introduce h2{margin: 20px 0 10px 0;font-weight: normal;}
 .main-right .container-about .introduce p{line-height: 28px;}
