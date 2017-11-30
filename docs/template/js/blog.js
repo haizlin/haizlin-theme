@@ -8,9 +8,7 @@
 
 var HzlBlog = {
     init: function() {
-        /*
         this.resize();
-        */
         this.goTop().scroll();
         this.goTop().active();
         this.tags();
@@ -41,7 +39,7 @@ var HzlBlog = {
     console: function() {
         try {
             if (window.console && window.console.log) {
-                console.log("^_^ 你来了！这都被你发现！");
+                console.log("^_^ 你来了，这都被你发现！");
                 console.log("^_^ %c越简单越快乐！越努力越幸运！", 'color:green;');
                 console.log("^_^ 非常感谢我亲爱地媳妇，在百忙这中为此博客做了全新的设计!!!");
                 console.log("^_^ 博客的源码及设计图(PSD)全部开源(欢迎Star及Pull Request)：%chttps://github.com/haizlin/blog-theme", "color:red;");
@@ -98,23 +96,6 @@ var HzlBlog = {
         });
     },
 
-    toc: function() {
-        var toc = $('#post-toc');
-        return {
-            scroll: function(top) {
-                if (!toc.length) return;
-                $.toc().fixed(top);
-                $.toc().actived(top);
-            },
-            go: function() {
-                if (!toc.length) {
-                    $('.post-article').css("width", "100%");
-                    return;
-                };
-                $.toc().go();
-            }
-        }
-    },
     // 返回顶部
     goTop: function() {
         var _this = this;
@@ -128,6 +109,7 @@ var HzlBlog = {
             }
         }
     },
+
     toggleGoTop: function() {
         var returnTop = $('#return-top');
 
@@ -139,31 +121,20 @@ var HzlBlog = {
                         scrollTop: 0
                     }, 300);
                 });
+                return false;
             },
             scroll: function(top) {
-                if (top > $(document).height() / 5) {
-                    returnTop.addClass('in');
-                } else {
-                    returnTop.removeClass('in');
-                }
+                $(window).scroll(function() {
+                    var top = $(window).scrollTop();
+                    $(window).scrollTop() > 200 ? returnTop.addClass("show") : returnTop.removeClass("show");
+                });
             }
         }
     },
 
-    scroll: function() {
-        $(window).scroll(function() {
-            var top = $(window).scrollTop();
-            $.BLOG.toc().scroll(top);
-            $.BLOG.header(top);
-            $.BLOG.goTop().scroll(top);
-            $.BLOG.waterfall();
-        });
-    },
     resize: function() {
         $(window).resize(function() {
             var top = $(window).scrollTop();
-            $.BLOG.toc().scroll(top);
-            $.BLOG.search().zoom();
         });
     }
 };

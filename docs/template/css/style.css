@@ -83,8 +83,9 @@ em{font-style:normal}
 .size11:hover{ color:#3fa055;}
 
 .scrollgress{z-index: 1000;}
-.return-top{background: url(../images/btn_returntop.png) no-repeat; position: fixed;right: 30px;bottom: 80px;color: #fff;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;z-index: 999;width: 17px;height: 41px;display: none;}
-.return-top:hover{}
+.return-top{background: url(../images/btn_returntop.png) no-repeat; position: fixed;right: 30px;bottom: 80px;color: #fff;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;z-index: 999;width: 26px;height: 41px;display: none;height: 62px;cursor: pointer;}
+.return-top:hover{background: url(../images/btn_returntop.png) no-repeat 0 -62px;}
+.return-top.show{display: block;}
 
 /* 搜索 */
 .layui-layer-search .search{background: #ecebea;padding: 0 34px;}
