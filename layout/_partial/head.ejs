@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <%
-  var title = page.title;
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  if (is_archive()){
-    title = __('archive_a');
+    <%
+      var title = page.title;
 
-    if (is_month()){
-      title += ': ' + page.year + '/' + page.month;
-    } else if (is_year()){
-      title += ': ' + page.year;
-    }
-  } else if (is_category()){
-    title = __('category') + ': ' + page.category;
-  } else if (is_tag()){
-    title = __('tag') + ': ' + page.tag;
-  }
-  %>
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
-  <% if (theme.rss){ %>
-    <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
-  <% } %>
-  <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
-  <% } %>
-  <% if (config.highlight.enable){ %>
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <% } %>
-  <%- css('css/style') %>
-  <%- partial('google-analytics') %>
+      if (is_archive()){
+        title = __('archive_a');
+
+        if (is_month()){
+          title += ': ' + page.year + '/' + page.month;
+        } else if (is_year()){
+          title += ': ' + page.year;
+        }
+      } else if (is_category()){
+        title = __('category') + ': ' + page.category;
+      } else if (is_tag()){
+        title = __('tag') + ': ' + page.tag;
+      }
+    %>
+    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+    <meta content="Home" name="keywords">
+    <meta content="Home" name="description">
+
+    <% if (theme.favicon){ %>
+    <link rel="shortcut icon" href="<%- theme.favicon %>"/>
+    <link rel="bookmark" href="<%- theme.favicon %>"/>
+    <% } %>
+    
+    <%- css('css/style') %>
+
+    <script src="./js/flexie.min.js"></script>
 </head>

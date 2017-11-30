@@ -1,11 +1,19 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  网站首页: /
+  专题系列: /
+  解决方案: /works
+  工具资源: /tools
+  我的生活: /about
+  关于我们: /about
+  文章标签: /tags
+  时间归档: /archives
 rss: /atom.xml
 
+github: https://github.com/haizhilin2013
+
 # Content
-excerpt_link: Read More
+excerpt_link: '[阅读全文]'
 fancybox: true
 
 # Sidebar
@@ -29,7 +37,7 @@ show_count: false
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+favicon: /favicon.ico
 twitter:
 google_plus:
 fb_admins:

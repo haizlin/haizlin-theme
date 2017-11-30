@@ -1,18 +1,13 @@
 <%- partial('_partial/head') %>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
-      </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-    </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
+  <div class="wrap fn-c">
+    <%- partial('_partial/main-left', null, {cache: !config.relative_link}) %>
+
+    <%- partial('_partial/main-right', null, {cache: !config.relative_link}) %>
   </div>
+
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/layer-v3.1.0/layer/layer.js"></script>
+  <script src="./js/blog.js"></script>
 </body>
 </html>
