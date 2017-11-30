@@ -176,7 +176,6 @@ em{font-style:normal}
 /*.main-right .article-tags a:hover{color:#ccc;}*/
 
 /* 工具资源 */
-.main-right .article-tools{}
 .main-right .article-tools .tools-list{background: #fff;margin-bottom: 26px;padding:20px 45px;}
 .main-right .article-tools .title{font-size:18px;color: #dd7b26;margin-bottom: 25px;font-weight: bold;}
 .main-right .article-tools li{float: left;margin-right: 30px;border:1px solid #e5e5e5;border-radius: 5px;padding:10px 10px 4px 10px;margin-bottom: 20px;}
@@ -199,9 +198,7 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .history-list ul::before{content: '';position: absolute;display: block;width: 4px;background: #e2e2e3;top: 63px;bottom: 50px;margin-left: 10px;}
 .main-right .history-list li{margin-bottom: 20px;height: auto;position: relative;}
 .main-right .history-list .number{background: #ebebeb;color: #737881;display: block;width: 32px;height: 32px;-webkit-background-clip: padding-box;-moz-background-clip: padding;background-clip: padding-box;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;text-align: center;border: 4px solid #e4e4e5;line-height: 32px;font-size: 15px;position: absolute;top: 50%;margin-top: -20px;margin-left: -9px;}
-.main-right .history-list .number span{}
 .main-right .history-list .text{background: #dcdcdb;padding: 20px;margin-left: 65px;border-radius: 5px;position: relative;width: 90%;}
-.main-right .history-list .text span{}
 .main-right .history-list .text::after{content: '';display: block;position: absolute;width: 0;height: 0;border-style: solid;border-width: 9px 9px 9px 0;border-color: transparent #dcdcdb transparent transparent;left: 0;top: 50%;margin-top: -9px;margin-left: -9px;}
 
 /* 关于 */
@@ -210,7 +207,7 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .container-about .info p{text-align: center;margin-top: 10px;}
 .main-right .container-about .detail{margin-left: 51px;font-size: 18px;color: #2d3441;line-height: 36px;}
 .main-right .container-about .detail a{color:#407094;}
-.main-right .container-about .detail p{padding-left: 46px;height:30px;margin-bottom: 20px;}
+.main-right .container-about .detail p{padding-left: 46px;height:30px;line-height: 30px; margin-bottom: 20px;}
 .main-right .container-about .detail .name{background:url(../images/icon.png) no-repeat 0px 0px;}
 .main-right .container-about .detail .location{background:url(../images/icon.png) no-repeat 0px -30px;}
 .main-right .container-about .detail .tel{background:url(../images/icon.png) no-repeat 0px -60px;}
