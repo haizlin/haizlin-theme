@@ -32,8 +32,8 @@ var HzlBlog = {
     },
 
     nav: function() {
-        $('.main-left nav li').hover(function() {
-            $('.main-left nav li').removeClass('current');
+        $('.main-left nav a').hover(function() {
+            $('.main-left nav a').removeClass('current');
             $(this).addClass('current');
         });
     },
@@ -80,9 +80,8 @@ var HzlBlog = {
                 type: 1,
                 title: '',
                 scrollbar: false,
-                fixed: false,
                 skin: 'layui-layer-search', //样式类名
-                shadeClose: true,
+                shadeClose: false,
                 shade: 0.8,
                 area: ['650px', '530px'],
                 content: content
