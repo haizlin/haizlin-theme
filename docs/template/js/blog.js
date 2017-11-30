@@ -8,11 +8,8 @@
 
 var HzlBlog = {
     init: function() {
-        /*this.toc().scroll(0);
-        this.toc().go();
-        
+        /*
         this.resize();
-        
         */
         this.goTop().scroll();
         this.goTop().active();
@@ -78,14 +75,17 @@ var HzlBlog = {
 
     search: function() {
         $('#search-text').click(function() {
+            var content = '<div class="search"><input type="text" class="search-input" placeholder="输入..." /></div><ul><li><p class="title"><a href="#">关于Linux的一些使用技巧</a></p><p class="description">此博文会分享给大家一些我在使用Linux系统过程中学到或者总结的实用技巧 ...</p></li><li><a href="#">JavaScript的单线程事件循环及多线程介绍</a></p><p class="description">JavaScript语言的一大特点就是单线程，也就是说，同一个时间只能做一件事 ...</p></li><li><a href="#">Linux共享服务Samba配置</a></p><p class="description">Samba共享服务器 安装 yum install samba -y 配置文件 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li></ul>';
             layer.open({
                 type: 1,
-                title: '搜索',
+                title: '',
+                scrollbar: false,
+                fixed: false,
                 skin: 'layui-layer-search', //样式类名
                 shadeClose: true,
                 shade: 0.8,
-                area: ['650px', '486px'],
-                content: '这是搜索框的内容'
+                area: ['650px', '530px'],
+                content: content
             });
         });
     },
