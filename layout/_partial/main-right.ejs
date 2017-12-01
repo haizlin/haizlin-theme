@@ -1,34 +1,11 @@
 <div class="main-right fn-r">
-    <div class="banner">
-        <img src="./images/banner1.jpg">
-        <p><span></span><span class="current"></span><span></span></p>
-    </div>
+    <%- partial('_partial/banner', null) %>
     
     <div class="container fn-c">
-        <article class="index-list">
-            <ul>
-                <% page.posts.each(function(post){ %>
-                    <%- partial('article', {post: post, index: true}) %>
-                <% }) %>
-            </ul>
-
-            <div class="page">
-                <a href="#">上一页</a>
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#" class="current">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <span>...</span>
-                <a href="#">下一页</a>
-            </div>
-        </article>
+        <%- body %>
     </div>
 
-    <footer class="fn-c">
-        <span class="fn-l">您好，您是本站点的第 <em>3957</em> 位访客，祝您生活工作愉快!</span>
-        <span class="fn-r">Copyright © haizlin 2010-2017         ICP备案证: 粤ICP备88888888号-1</span>
-    </footer>
+    <%- partial('_partial/copyright', null) %>
 
-    <div id="return-top" class="return-top"></div>
+    <%- partial('_partial/return-top', null) %>
 </div>
