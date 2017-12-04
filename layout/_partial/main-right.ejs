@@ -1,7 +1,7 @@
 <div class="main-right fn-r">
     <%- partial('_partial/banner', null) %>
     
-    <div class="container fn-c">
+    <div class="container <% if(path=='about/index.html'){ %>container-about <% } %> fn-c">
         <%- body %>
     </div>
 

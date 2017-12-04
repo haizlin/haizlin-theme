@@ -1,14 +1,18 @@
 # Header
 menu:
   网站首页: /
-  专题系列: /
-  解决方案: /works
-  工具资源: /tools
-  我的生活: /about
-  关于我们: /about
-  文章标签: /tags
-  时间归档: /archives
+  专题系列: /categories/special/
+  解决方案: /categories/works/
+  工具资源: /tools/
+  我的生活: /categories/life/
+  关于我们: /about/
+  文章标签: /tags/
+  时间归档: /archives/
 rss: /atom.xml
+
+submenu:
+  前端: /categories/special/front-end
+  PHP: /categories/special/php
 
 github: https://github.com/haizhilin2013
 
