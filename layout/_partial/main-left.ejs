@@ -2,7 +2,7 @@
     <div class="space"></div>
     <div class="left-list">
         <header>
-            <p class="logo"><a href="/"><img src="/images/logo.png"></a></p>
+            <p class="logo"><a href="/"><img src="<%= theme.avatar %>"></a></p>
             <p class="nickname">浪子神剑</p>
             <p class="autograph">越简单越快乐, 越努力越幸运!</p>
         </header>
@@ -26,12 +26,12 @@
 
         <nav>
             <% for (var i in theme.menu){ %>
-              <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+              <a href="<%- url_for(theme.menu[i]) %>" class="<%= current_path(page.path, theme.menu[i]) %>"><%= i %></a>
             <% } %>
         </nav>
     </div>
 
     <footer>
-        <p>Hexo Theme <a href="#">Haizlin</a> by <a href="#">浪子夫人</a></p>
+        <p>Hexo Theme <a href="<%= theme.blog_theme %>" target="_blank">Haizlin</a> by <a href="<%= theme.blog_theme %>" target="_blank">浪子夫人</a></p>
     </footer>
 </div>

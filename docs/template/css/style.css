@@ -154,8 +154,9 @@ em{font-style:normal}
 .main-right article .share{text-align: right;height: 16px;margin-bottom: 30px;}
 .main-right article .share .jiathis_style{display: inline-block;}
 .main-right article .prev-next{margin-bottom: 15px;}
-.main-right article .prev-next a{color:#434e60;}
-.main-right article .copyright{color: #666;}
+.main-right article .prev-next a{color:#dd7b26;}
+.main-right article .copyright{color: #666;background: #eee;padding:10px;}
+.main-right article .copyright a{color: #dd7b26;}
 
 /* 时间归档 */
 .main-right .archives .times-list{margin-bottom: 30px;background: #fff;padding:9px 0 18px 29px;}
