@@ -178,12 +178,13 @@ em{font-style:normal}
 
 /* 工具资源 */
 .main-right .article-tools .tools-list{background: #fff;margin-bottom: 26px;padding:20px 45px;}
-.main-right .article-tools .title{font-size:18px;color: #dd7b26;margin-bottom: 25px;font-weight: bold;}
-.main-right .article-tools li{float: left;margin-right: 30px;border:1px solid #e5e5e5;border-radius: 5px;padding:10px 10px 4px 10px;margin-bottom: 20px;}
+.main-right .article-tools .title{font-size:18px;color: #dd7b26;margin-bottom: 25px;font-weight: bold;background: url(../images/btn_tools.png) no-repeat left 3px;padding-left: 30px;}
+.main-right .article-tools li{float: left;margin-right: 30px;border:1px solid #e5e5e5;border-radius: 5px;padding:10px 10px 5px 10px;margin-bottom: 20px;width: 218px;}
 .main-right .article-tools li h3{font-size: 18px;color: #295dab;}
+.main-right .article-tools li h3 span{width: 32px;height: 32px;border-radius: 50%;background: #8bc2fd;color: #fff;font-size: 21px;margin-right: 9px;padding: 6px;}
 .main-right .article-tools li .info{font-size: 14px;color: #666;margin:10px 0;}
 .main-right .article-tools li .view{font-size: 12px;text-align: right;}
-.main-right .article-tools li .view a{color: #fff;background: #5791e6;padding:5px;border-radius: 10px;}
+.main-right .article-tools li .view a{color: #fff;background: #5791e6;border-radius: 10px;padding:0 12px;line-height: 22px;height: 22px;display: inline-block;}
 
 /* 历史记录 */
 .main-right .history-list{margin-bottom: 155px;font-size: 14px;color: #404651;position: relative;margin-left: 17px;margin-top: 58px;}
