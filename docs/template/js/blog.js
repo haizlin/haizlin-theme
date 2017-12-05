@@ -30,9 +30,14 @@ var HzlBlog = {
     },
 
     nav: function() {
+        var index = $('.main-left nav .current').index();
+        
         $('.main-left nav a').hover(function() {
             $('.main-left nav a').removeClass('current');
             $(this).addClass('current');
+        }, function(){
+            $('.main-left nav a').removeClass('current');
+            $('.main-left nav a').eq(index).addClass('current');
         });
     },
 

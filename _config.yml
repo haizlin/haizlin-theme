@@ -1,11 +1,33 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-rss: /atom.xml
+  网站首页: /
+  专题系列: /categories/special/
+  解决方案: /categories/solution/
+  工具资源: /tools/
+  我的生活: /categories/life/
+  关于我们: /about/
+  文章标签: /tags/
+  时间归档: /archives/
+
+
+# 头像
+avatar: /images/logo.png
+
+default_category: special
+category_map:
+    专题: special
+    方案: solution
+    生活: life
+
+submenu:
+  前端: /categories/special/front-end
+  PHP: /categories/special/php
+
+github: https://github.com/haizhilin2013
+blog_theme: https://github.com/haizlin/blog-theme
 
 # Content
-excerpt_link: Read More
+excerpt_link: '[阅读全文]'
 fancybox: true
 
 # Sidebar
@@ -29,8 +51,26 @@ show_count: false
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+favicon: /favicon.ico
 twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+# 要修改根目录下的配置
+permalink: posts/:abbrlink/
+
+search:
+  path: search.xml
+  field: all
+
+# yarn add hexo-generator-feed --save
+rss: /atom.xml
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '

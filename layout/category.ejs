@@ -1,1 +1,11 @@
-<%- partial('_partial/archive', {pagination: config.category, index: true}) %>
+<%- partial('_partial/sidebar') %>
+
+<article class="article-list index-list">
+    <ul>
+        <% page.posts.each(function(post){ %>
+            <%- partial('_partial/article', {post: post, index: true, pagination: 2,}) %>
+        <% }) %>
+    </ul>
+
+    <%- partial('_partial/pagination', null) %>
+</article>

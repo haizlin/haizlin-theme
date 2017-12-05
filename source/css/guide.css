@@ -1,0 +1,133 @@
+body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,legend,ol,p,select,td,textarea,th,ul{margin:0;padding:0}
+audio,canvas,img,svg,video{max-width:100%;vertical-align:middle}
+body{font-family:Roboto,sans-serif,"微软雅黑","Microsoft YaHei",arial,"Helvetica Neue";position:relative;background: #ebebeb;}
+body,html{height:100%;width:100%;}
+li,ul{list-style:none}
+input,select,textarea{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+th{text-align:inherit}
+a{text-decoration:none;}
+a:focus,a:hover{color:#cc752c;text-decoration:none}
+img,input{vertical-align:middle;border:0 none}
+em{font-style:normal}
+
+#menu { position: fixed; right: 20px; top: 50%; width: 90px; margin: -160px 0 0; padding: 0; list-style-type: none; z-index: 70;}
+#menu li { margin-top: 10px; font: 14px "Microsoft Yahei";}
+#menu a { display: block; padding: 10px 0; background-color: #fff; color: #0074EA; text-align: center; text-decoration: none;}
+#menu .active a { color: #fff; background-color: rgb(0, 116, 234);}
+.section { text-align: center; font: 18px "Microsoft Yahei"; color: #fff;}
+.section1 { background: url(images/bg2_87283a0.jpg) 50% no-repeat;}
+.screen-main { position: relative; width: 1280px; height: 840px; margin: 0 auto;}
+.screen-main span { position: absolute;}
+.science-inner { position: relative; width: 980px; height: 850px; margin: 0 auto; background-image: url(images/bg-kj_4d6c383.png); overflow: hidden;}
+.famous-inner { position: relative; width: 980px; height: 850px; margin: 0 auto; background-image: url(images/renwu-bg_c26f167.png); overflow: hidden;}
+.social-inner { position: relative; width: 980px; height: 850px; margin: 0 auto; background-image: url(images/bj-so_ff09f3c.png); overflow: hidden;}
+.net-inner { position: relative; width: 980px; height: 850px; margin: 0 auto; background-image: url(images/bj-net_3cad4e6.png); overflow: hidden;}
+
+.screen-main .shi1 { width: 79px; height: 75px; left: -501px; top: -455px; z-index: 4; background: url(images/shi1_75f744d.png) }
+.screen-main .shi2 { width: 276px; height: 140px; left: 1387px; z-index: 1; top: -359px; background: url(images/shi2_29587be.png) }
+.screen-main .shi3 { width: 173px; height: 233px; left: -619px; z-index: 3; top: -359px; background: url(images/shi3_e2d0678.png) }
+.screen-main .shi4 { width: 286px; height: 142px; left: 1398px; z-index: 2; top: -259px; background: url(images/shi4_e893f53.png) }
+.screen-main .ji1 { width: 92px; height: 90px; left: -327px; z-index: 2; top: -589px; background: url(images/ji1_39b114b.png) }
+.screen-main .ji2 { width: 127px; height: 234px; left: 1648px; z-index: 2; top: -487px; background: url(images/ji2_852cd0a.png) }
+.screen-main .ji3 { width: 195px; height: 293px; left: -244px; z-index: 2; top: -488px; background: url(images/ji3_a328316.png) }
+.screen-main .year2 { width: 68px; height: 98px; left: 1686px; z-index: 2; top: -213px; background: url(images/2013-2_bf3a5a5.png) }
+.screen-main .year0 { width: 71px; height: 97px; left: -266px; z-index: 2; top: -189px; background: url(images/2013-0_3cef07f.png) }
+.screen-main .year1 { width: 40px; height: 99px; left: 1792px; z-index: 2; top: -210px; background: url(images/2013-1_0cb559a.png) }
+.screen-main .year3 { width: 66px; height: 97px; left: -173px; z-index: 2; top: -207px; background: url(images/2013-3_596921f.png) }
+.screen-main .slogen { width: 363px; height: 45px; left: 1462px; z-index: 1; top: -106px; background: url(images/slogen_5635c9f.png) }
+
+.science-inner a { text-decoration: none; color: #004b85; float: left; position: absolute; display: inline-block; white-space: nowrap }
+.science-inner a:hover { color: #1c9cff }
+.science-inner .stiteml { padding-left: 37px; background: url(images/num-keji_3f60772.png) 0 0 no-repeat }
+.science-inner .stitemr { padding-right: 37px; background: url(images/num-keji_3f60772.png) 0 0 no-repeat }
+.science-inner .st1 { background-position: 0 4px }
+.science-inner .st2 { background-position: 0 -59px }
+.science-inner .st3 { background-position: 0 -59px }
+.science-inner .st4 { font-size: 48px; background-position: 0 -104px }
+.science-inner .st5 { background-position: 0 -195px }
+.science-inner .st6 { background-position: 0 -267px }
+.science-inner .st7 { background-position: 0 -244px; font-size: 48px }
+.science-inner .st8 { background-position: 0 -267px }
+.science-inner .st9 { background-position: 78px -350px }
+.science-inner .st10 { background-position: 79px -431px }
+.science-inner .st11 { background-position: 147px -502px }
+.science-inner .st12 { background-position: 342px -481px; font-size: 48px }
+.science-inner .st13 { background-position: 0 -573px; padding-left: 47px }
+.science-inner .st14 { background-position: 0 -626px; padding-left: 47px; font-size: 48px }
+.science-inner .st15 { background-position: 0 -646px; padding-left: 47px }
+.science-inner .st16 { background-position: 0 -646px; padding-left: 47px }
+.science-inner .st17 { background-position: 0 -732px; padding-left: 47px }
+
+.famous-inner a { text-decoration: none; color: #8a5e25; float: left; position: absolute; display: inline-block; white-space: nowrap }
+.famous-inner a:hover { color: #d58116 }
+.famous-inner .faiteml { padding-left: 37px; background: url(images/num-renwu_3294764.png) 0 0 no-repeat }
+.famous-inner .faitemr { padding-right: 37px; background: url(images/num-renwu_3294764.png) 0 0 no-repeat }
+.famous-inner .fa1 { background-position: 61px 4px }
+.famous-inner .fa2 { background-position: 61px -103px }
+.famous-inner .fa3 { background-position: 151px -185px; font-size: 48px }
+.famous-inner .fa4 { background-position: 0 -312px }
+.famous-inner .fa5 { background-position: 0 -404px; font-size: 48px }
+.famous-inner .fa6 { background-position: 0 -426px }
+.famous-inner .fa7 { background-position: 0 -404px; font-size: 48px }
+.famous-inner .fa8 { background-position: 0 -762px; padding-left: 47px }
+.famous-inner .fa9 { background-position: 0 -901px; padding-left: 47px }
+.famous-inner .fa10 { background-position: 0 -1043px; padding-left: 47px }
+.famous-inner .fa11 { background-position: 0 -520px; font-size: 48px }
+.famous-inner .fa12 { background-position: 0 -648px }
+.famous-inner .fa13 { background-position: 0 -648px }
+.famous-inner .fa14 { background-position: 0 -1185px }
+.famous-inner .fa15 { background-position: 0 -1185px }
+
+.social-inner a { text-decoration: none; color: #535353; float: left; position: absolute; display: inline-block; white-space: nowrap }
+.social-inner a:hover { color: #bababa }
+.social-inner .soiteml { padding-left: 47px; background: url(images/num-shehui_e0faa81.png) 0 0 no-repeat }
+.social-inner .soitemr { padding-right: 47px; background: url(images/num-shehui_e0faa81.png) 0 0 no-repeat }
+.social-inner .so1 { background-position: 0 22px; font-size: 48px }
+.social-inner .so2 { background-position: 0 -118px }
+.social-inner .so3 { background-position: 0 -118px }
+.social-inner .so4 { background-position: 0 -595px }
+.social-inner .so5 { background-position: 0 -595px }
+.social-inner .so6 { background-position: 0 -1002px }
+.social-inner .so7 { background-position: 0 -723px }
+.social-inner .so8 { background-position: 0 -697px; font-size: 48px }
+.social-inner .so9 { background-position: 0 -723px }
+.social-inner .so10 { background-position: 0 -206px; font-size: 48px }
+.social-inner .so11 { background-position: 0 -344px }
+.social-inner .so12 { background-position: 0 -471px }
+.social-inner .so13 { background-position: 438px -859px; font-size: 48px }
+.social-inner .so14 { background-position: 78px -879px }
+.social-inner .so15 { background-position: 97px -879px }
+
+.net-inner a { text-decoration: none; color: #00a0e9; float: left; position: absolute; display: inline-block; white-space: nowrap }
+.net-inner a:hover { color: #054b6b }
+.net-inner .netiteml { padding-left: 37px; background: url(images/num-net_d930c09.png) 0 0 no-repeat }
+.net-inner .netitemr { padding-right: 37px; background: url(images/num-net_d930c09.png) 0 0 no-repeat }
+.net-inner .net1 { background-position: 61px 4px }
+.net-inner .net2 { background-position: 78px -101px }
+.net-inner .net3 { background-position: 78px -101px }
+.net-inner .net4 { background-position: 59px -101px }
+.net-inner .net5 { background-position: 133px -198px }
+.net-inner .net6 { background-position: 111px -198px }
+.net-inner .net7 { background-position: 0 -316px }
+.net-inner .net8 { background-position: 0 -439px }
+.net-inner .net9 { background-position: 0 -420px; font-size: 48px }
+.net-inner .net10 { background-position: 0 -439px }
+.net-inner .net11 { background-position: 0 -439px }
+.net-inner .net12 { background-position: 0 -566px; font-size: 48px }
+.net-inner .net13 { background-position: 132px -708px }
+.net-inner .net14 { background-position: 294px -831px; font-size: 48px }
+.net-inner .net15 { background-position: 390px -831px; font-size: 48px }
+.net-inner .net16 { background-position: 60px -851px }
+.net-inner .net17 { background-position: 60px -851px }
+.net-inner .net18 { padding-left: 50px; background-position: 2px -963px }
+.net-inner .net19 { padding-left: 50px; background-position: 2px -1079px }
+.net-inner .net20 { padding-left: 50px; background-position: 2px -1079px }
+
+.zanzhu { text-align: left;}
+.zanzhu-con { width: 880px; height: 273px; margin: 0 auto; overflow: hidden; zoom: 1;}
+.zanzhu h2 { position: relative; left: 28px; width: 880px; margin: 0 auto 20px; font: 500 30px "Microsoft Yahei"; color: #856B37;}
+.zanzhu-con a { display: none; float: left; margin: 0 0 10px 28px;}
+
+.foot { margin-top: 100px; line-height: 30px; color: #666; font-size: 12px; text-align: center;}
+.foot a { color: #0074EA;}
