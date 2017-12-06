@@ -173,8 +173,10 @@ em{font-style:normal}
 
 /* tags */
 .main-right .article-tags{background: #fff;padding:46px 85px 59px 63px;}
-.main-right .article-tags a{margin-right: 18px;margin-bottom: 30px;border-radius: 10px;padding:5px 12px;display: inline-block;color: #2d3441;}
-.main-right .article-tags a:hover{color: #fff;}
+.main-right .article-tags a{margin-right: 18px;margin-bottom: 30px;border-radius: 10px;padding:5px 12px;display: inline-block;color: #fff;}
+.main-right .article-tags a:hover{color: #2d3441;}
+.main-right .article-tags span::before{content:"(";}
+.main-right .article-tags span::after{content:")";}
 
 /* 工具资源 */
 .main-right .article-tools .tools-list{background: #fff;margin-bottom: 26px;padding:20px 45px;}
@@ -249,8 +251,10 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .sidebar aside li a:hover{color: #dd7b26;}
 
 .main-right .sidebar aside .tag-list{padding:12px 8px 10px 14px;}
-.main-right .sidebar aside .tag-list a{margin-right: 5px;margin-bottom: 10px;padding:5px 12px;display: inline-block;font-size:14px;}
-.main-right .sidebar aside .tag-list a:hover{font-weight: bold;color: #fff;}
+.main-right .sidebar aside .tag-list a{margin-right: 5px;margin-bottom: 10px;padding:5px 8px;display: inline-block;font-size:14px;color: #fff;}
+.main-right .sidebar aside .tag-list a:hover{color: #52646c;}
+.main-right .sidebar aside .tag-list span::before{content:"("}
+.main-right .sidebar aside .tag-list span::after{content:")"}
 
 .main-right footer{background: #434e60;padding:19px 70px;font-size: 16px;color: #fff;}
 .main-right footer em{color: #eb8d50;}

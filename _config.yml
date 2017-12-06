@@ -9,6 +9,11 @@ menu:
   文章标签: /tags/
   时间归档: /archives/
 
+sub_menu:
+  special: [php,nodejs]
+  life: [php,nodejs]
+  about: [php,nodejs]
+
 
 # 头像
 avatar: /images/logo.png
@@ -35,11 +40,9 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
-- tagcloud
-- archive
 - recent_posts
+- ad
+- tag
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -79,10 +82,12 @@ feed:
   content_limit_delim: ' '
 
 # 站点地图
-# yarn add hexo-generator-seo-friendly-sitemap --save
-# yarn add hexo-generator-sitemap
+# yarn add hexo-generator-sitemap --save
 sitemap:
-    path: sitemap.xml
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
 
 excerptLength: 350
 
