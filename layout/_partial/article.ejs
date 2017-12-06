@@ -1,10 +1,15 @@
 <%  
     var format = 'YYYY-MM-DD';
     if (is_archive()) format = "MM/DD";
+
+    var content = post.content;
+    if(post.excerpt){
+      content = post.excerpt;
+    }
 %>
 <li>
     <p class="title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
-    <p class="description"><%- truncate(strip_html(post.content), {length: theme.excerptLength || 120, omission: '...'}) %>
+    <p class="description"><%- truncate(strip_html(content), {length: theme.excerptLength || 120, omission: '...'}) %>
       <span><a href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a></span>
     </p>
     <p class="tag">

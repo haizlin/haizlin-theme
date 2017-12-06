@@ -174,7 +174,7 @@ em{font-style:normal}
 /* tags */
 .main-right .article-tags{background: #fff;padding:46px 85px 59px 63px;}
 .main-right .article-tags a{margin-right: 18px;margin-bottom: 30px;border-radius: 10px;padding:5px 12px;display: inline-block;color: #2d3441;}
-.main-right .article-tags a:hover{font-weight: bold;color: #fff;}
+.main-right .article-tags a:hover{color: #fff;}
 
 /* 工具资源 */
 .main-right .article-tools .tools-list{background: #fff;margin-bottom: 26px;padding:20px 45px;}

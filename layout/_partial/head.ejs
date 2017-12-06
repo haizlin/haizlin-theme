@@ -29,8 +29,8 @@
       }
     %>
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-    <meta content="Home" name="keywords">
-    <meta content="Home" name="description">
+    <meta name="keywords" content="<%= theme.keywords %>">
+    <meta name="description" content="<%= theme.description %>">
 
     <% if (theme.favicon){ %>
     <link rel="shortcut icon" href="<%- theme.favicon %>"/>
@@ -39,5 +39,5 @@
     
     <%- css('css/style') %>
 
-    <script src="./js/flexie.min.js"></script>
+    <script src="/js/flexie.min.js"></script>
 </head>

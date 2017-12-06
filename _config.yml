@@ -76,3 +76,10 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+
+# 站点地图
+# yarn add hexo-generator-seo-friendly-sitemap --save
+sitemap:
+    path: sitemap.xml
+
+

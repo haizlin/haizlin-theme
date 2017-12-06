@@ -7,6 +7,7 @@
  */
 
 var HzlBlog = {
+    searchDatas: {}, // 搜索数据
     init: function() {
         this.resize();
         this.goTop().scroll();
@@ -17,6 +18,7 @@ var HzlBlog = {
         this.console();
         this.footer();
         this.search();
+        this.searchChange();
     },
 
     tags: function() {
@@ -31,11 +33,11 @@ var HzlBlog = {
 
     nav: function() {
         var index = $('.main-left nav .current').index();
-        
+
         $('.main-left nav a').hover(function() {
             $('.main-left nav a').removeClass('current');
             $(this).addClass('current');
-        }, function(){
+        }, function() {
             $('.main-left nav a').removeClass('current');
             $('.main-left nav a').eq(index).addClass('current');
         });
@@ -76,9 +78,11 @@ var HzlBlog = {
         footerHeight();
     },
 
+    // 输入框弹窗
     search: function() {
         $('#search-text').click(function() {
-            var content = '<div class="search"><input type="text" class="search-input" placeholder="输入..." /></div><ul><li><p class="title"><a href="#">关于Linux的一些使用技巧</a></p><p class="description">此博文会分享给大家一些我在使用Linux系统过程中学到或者总结的实用技巧 ...</p></li><li><a href="#">JavaScript的单线程事件循环及多线程介绍</a></p><p class="description">JavaScript语言的一大特点就是单线程，也就是说，同一个时间只能做一件事 ...</p></li><li><a href="#">Linux共享服务Samba配置</a></p><p class="description">Samba共享服务器 安装 yum install samba -y 配置文件 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li><li><a href="#">Nodejs核心模块 Timers详解</a></p><p class="description">在 Node.js 基础库中，任何一个 TCP I/O 都会产生一个 timer（计时器）对象 ...</p></li></ul>';
+            var content = '<div class="search"><input type="text" class="search-input" id="key" placeholder="输入..." /></div><ul id="search-result"></ul>';
+            
             layer.open({
                 type: 1,
                 title: '',
@@ -89,11 +93,107 @@ var HzlBlog = {
                 area: ['650px', '530px'],
                 content: content
             });
+
+            $('#key').focus();
         });
     },
 
+    searchChange: function() {
+        var _this = this;
+        $(document).on('input propertychange', '#key', function() {
+            var text = $.trim($(this).val());
+            var regExp = new RegExp(text.replace(/[ ]/g, '|'), 'gmi');
+
+            _this.loadData(function(data) {
+                var result = data.filter(function(post) {
+                    return _this.matcher(post, regExp);
+                });
+
+                _this.render(result);
+            });
+
+        });
+    },
+
+    matcher: function(post, regExp) {
+        var _this = this;
+        return _this.regtest(post.title, regExp);
+    },
+
+    regtest: function(raw, regExp) {
+        regExp.lastIndex = 0;
+        return regExp.test(raw);
+    },
+
+    render: function(data) {
+        var html = '';
+        var searchResult = $('#search-result');
+        searchResult.html('');
+
+        if (data.length) {
+            for (var i = 0; i < data.length; i++) {
+                html += '<li><p class="title"><a href="/' + data[i].path + '">' + data[i].title + '</a></p><p class="description">' + this.cutString(data[i].excerpt,76) + '</p></li>';
+            }
+        } else {
+            html = '<li><p>没有找到相关结果!</p></li>';
+        }
+
+        searchResult.append(html);
+    },
+
+    loadData: function(success) {
+        var _this = this;
+
+        if (_this.isEmptyObject(_this.searchDatas)) {
+            $.getJSON('/content.json', function(data) {
+                _this.searchDatas = data || {};
+
+                success(_this.searchDatas);
+            })
+        } else {
+            success(_this.searchDatas);
+        }
+    },
+
+    // 检测对象是否为空
+    isEmptyObject: function(obj) {　　
+        for (var key in obj) {　　　　
+            return false; //返回false，不为空对象
+            　　
+        }　　　　
+        return true; //返回true，为空对象
+    },
+
+    // 截取字符串
+    cutString: function(str, len) {
+        //length属性读出来的汉字长度为1 
+        if (str.length * 2 <= len) {
+            return str;
+        }
+        var strlen = 0;
+        var s = "";
+
+        for (var i = 0; i < str.length; i++) {
+            s = s + str.charAt(i);
+            if (str.charCodeAt(i) > 128) {
+                strlen = strlen + 2;
+                if (strlen >= len) {
+                    return s.substring(0, s.length - 1) + "...";
+                }
+            } else {
+                strlen = strlen + 1;
+
+                if (strlen >= len) {
+                    return s.substring(0, s.length - 2) + "...";
+                }
+            }
+        }
+
+        return s;
+    },
+
+    // 微信扫一扫
     weinxin: function() {
-        // 微信扫一扫
         $('.social .weixin').hover(function() {
             $('#weixin-qrcode').fadeIn(200);
         }, function() {
