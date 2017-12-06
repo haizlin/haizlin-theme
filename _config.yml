@@ -53,6 +53,7 @@ show_count: false
 
 # Miscellaneous
 google_analytics:
+# favicon 文件要放在haizlin/source下
 favicon: /favicon.ico
 twitter:
 google_plus:
@@ -79,7 +80,10 @@ feed:
 
 # 站点地图
 # yarn add hexo-generator-seo-friendly-sitemap --save
+# yarn add hexo-generator-sitemap
 sitemap:
     path: sitemap.xml
+
+excerptLength: 350
 
 
