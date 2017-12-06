@@ -1,6 +1,10 @@
+<span>Tags:</span>
 <% if (post.tags && post.tags.length){ %>
   <%- list_tags(post.tags, {
     show_count: false,
-    class: 'article-tag'
+    style:'',
+    separator:''
   }) %>
+<% }else { %>
+<a href="javascript:void(0);">无</a>
 <% } %>

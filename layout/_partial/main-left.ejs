@@ -1,0 +1,37 @@
+<div class="main-left fn-l">
+    <div class="space"></div>
+    <div class="left-list">
+        <header>
+            <p class="logo"><a href="/"><img src="<%= theme.avatar %>"></a></p>
+            <p class="nickname">浪子神剑</p>
+            <p class="autograph">越简单越快乐, 越努力越幸运!</p>
+        </header>
+
+        <p class="line"></p>
+
+        <div class="search">
+            <input type="text" readonly id="search-text" placeholder="Search">
+        </div>
+
+        <div class="social">
+            <a href="javascript:void(0);" title="" class="weixin"><img src="/images/ico_weixin.png" alt="">
+                <div class="weixin-qrcode" id="weixin-qrcode">
+                    <p>更多精彩扫扫这里</p>
+                    <img style="width:160px;background:#fff;" src="/images/qr_code.png">
+                </div>
+            </a>
+            <a href="#" title="新浪"><img src="/images/ico_sina.png" alt=""></a>
+            <a href="<%= theme.github %>" target="_blank" title="github"><img src="/images/ico_github.png" alt="github"></a>
+        </div>
+
+        <nav>
+            <% for (var i in theme.menu){ %>
+              <a href="<%- url_for(theme.menu[i]) %>" class="<%= current_path(page.path, theme.menu[i]) %>"><%= i %></a>
+            <% } %>
+        </nav>
+    </div>
+
+    <footer>
+        <p>Hexo Theme <a href="<%= theme.blog_theme %>" target="_blank">Haizlin</a> by <a href="<%= theme.blog_theme %>" target="_blank">浪子夫人</a></p>
+    </footer>
+</div>

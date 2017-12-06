@@ -1,1 +1,36 @@
-<%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
+<article class="archives">
+    <% var last; %>
+    <% page.posts.each(function(post, i){ %>
+<% var year = post.date.year(); %>
+<% if (last != year){ %>
+  <% if (last != null){ %>
+        </ul>
+    </div>
+  <% } %>
+  <% last = year; %>
+  <div class="times-list fn-c">
+    <p class="year fn-l"><%= year %></p>
+    <ul class="fn-l">
+<% } %>
+<%- partial('_partial/archive', {post: post}) %>
+    <% }) %>
+        </ul>
+    </div>
+
+    <div class="page">
+        <a href="#">上一页</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#" class="current">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <span>...</span>
+        <a href="#">下一页</a>
+    </div>
+</article>
+
+
+
+
+
+

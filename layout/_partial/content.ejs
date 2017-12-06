@@ -1,0 +1,60 @@
+<%- partial('_partial/sidebar') %>
+
+<article class="article-list">
+    <div class="article-wrap">
+        <h1><%= post.title %></h1>
+        <p class="date">
+            <span><%= date(post.date, '') %></span><span class="view"><em id="busuanzi_value_page_pv"></em>次浏览</span>
+        </p>
+
+        <div class="content" id="content">
+            <div>
+                <%- post.content %>
+                
+                <% if (post.toc){ %>
+                <%- toc(post.content) %>
+                <% } %>
+            </div>
+
+            <div class="tag content-tag">
+                <%- partial('_partial/post/tag') %>
+            </div>
+            <div class="share">
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style">
+                    <a class="jiathis_button_qzone"></a>
+                    <a class="jiathis_button_tsina"></a>
+                    <a class="jiathis_button_tqq"></a>
+                    <a class="jiathis_button_weixin"></a>
+                    <a class="jiathis_button_renren"></a>
+                    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                </div>
+                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                <!-- JiaThis Button END -->
+            </div>
+            
+            <div class="prev-next">
+                <% if (post.prev){ %>
+                <p>上一篇：<a href="<%- url_for(post.prev.path) %>"><%= post.prev.title %></a></p>
+                <% }else{ %>
+                <p>上一篇：无</p>
+                <% } %>
+
+                <% if (post.next){ %>
+                <p>下一篇：<a href="<%- url_for(post.next.path) %>"><%= post.next.title %></a></p>
+                <% }else{ %>
+                <p>下一篇：无</p>
+                <% } %>
+            </div>
+
+            <div class="copyright">
+                <p>转载声明：</p>
+                <p>文章作者：浪子神剑</p>
+                <p>本文标题：<a href="<%- url_for(post.path) %>">实现微博模拟登录并与微软小冰私信</a></p>
+                <p>原始链接：<a href="<%- url_for(post.path) %>"><%- url_for(post.path) %></a></p>
+                <p>文章来源：海之林</p>
+                <p>著作权归本网站所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,13 @@
+<div class="main-right fn-r">
+    <%- partial('_partial/banner', null) %>
+
+    <%- partial('_partial/sub-nav', null) %>
+    
+    <div class="container <% if(path=='about/index.html'){ %>container-about <% } %> fn-c">
+        <%- body %>
+    </div>
+
+    <%- partial('_partial/copyright', null) %>
+
+    <%- partial('_partial/return-top', null) %>
+</div>
