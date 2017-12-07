@@ -1,4 +1,4 @@
-body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,legend,ol,p,select,td,textarea,th,ul{margin:0;padding:0}
+body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,legend,ol,p,select,td,textarea,th,ul,figure{margin:0;padding:0}
 audio,canvas,img,svg,video{max-width:100%;vertical-align:middle}
 body{font-family:Roboto,sans-serif,"微软雅黑","Microsoft YaHei",arial,"Helvetica Neue";position:relative;background: #ebebeb;}
 body,html{height:100%;width:100%;}
@@ -301,3 +301,168 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
     to { background-position: 0 100%; }
 }
 
+/* highlight */
+.content pre,
+.content .highlight {
+  background: #2d3441;
+  margin: auto;
+  padding: 0.35em 1.5em;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px;
+  overflow: auto;
+  color: #ccc;
+  line-height: 1.3rem;
+}
+.content .highlight .gutter pre {
+  color: #d3d3d3;
+  font-size: 0.85em;
+}
+.content pre,
+.content code {
+  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", monospace;
+  font-size: 1em;
+}
+.content pre code {
+  text-shadow: none;
+  padding: 0;
+  background: none;
+  color: #ccc;
+}
+.content .highlight {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  max-height: 50em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  overflow: auto;
+}
+.content .highlight pre {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.content .highlight table {
+  margin: 0;
+  width: auto;
+}
+.content .highlight td {
+  border: none;
+  padding: 0;
+}
+.content .highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.content .highlight figcaption:before,
+.content .highlight figcaption:after {
+  content: "";
+  display: table;
+}
+.content .highlight figcaption:after {
+  clear: both;
+}
+.content .highlight figcaption a {
+  float: right;
+}
+.content .highlight .gutter pre {
+  text-align: right;
+  padding-right: 1em;
+}
+.content code {
+  color: #808080;
+  background: rgba(248,237,223,0.5);
+  padding: 0.05em 0.3em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.08);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.08);
+  var: 1;
+  color: #fff;
+  background: rgba(153,204,153,0.75);
+}
+pre .comment,
+pre .quote,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo,
+pre .template-variable,
+pre .name,
+pre .selector-id,
+pre .selector-class,
+pre .deletion {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant,
+pre .builtin-name,
+pre .type,
+pre .meta,
+pre .link {
+  color: #f99157;
+}
+pre .attribute {
+  color: #fc6;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute,
+pre .string,
+pre .symbol,
+pre .bullet,
+pre .addition {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title,
+pre .title,
+pre .section {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function,
+pre .selector-tag {
+  color: #c9c;
+}
+pre .emphasis {
+  font-style: italic;
+}
+pre .strong {
+  font-weight: bold;
+}
