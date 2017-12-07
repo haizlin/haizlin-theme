@@ -1,18 +1,41 @@
 # Header
 menu:
-  网站首页: /
-  专题系列: /categories/special/
-  解决方案: /categories/solution/
-  工具资源: /tools/
-  我的生活: /categories/life/
-  关于我们: /about/
-  文章标签: /tags/
-  时间归档: /archives/
+  网站首页: /index.html
+  专题系列: /categories/special/index.html
+  解决方案: /categories/solution/index.html
+  工具资源: /tools/index.html
+  我的生活: /categories/life/index.html
+  关于我们: /about/index.html
+  文章标签: /tags/index.html
+  时间归档: /archives/index.html
 
 sub_menu:
-  special: [php,nodejs]
-  life: [php,nodejs]
-  about: [php,nodejs]
+  special: 
+    categories/php: PHP
+    categories/nodejs: Nodejs
+    categories/sql: 数据库
+  life: 
+    categories/happy: 开心一刻
+    categories/tour: 旅游
+  solution:
+    categories/safe: 安全
+    categories/performance: 性能
+  tools:
+    manual: 手册
+    friendly: 友情链接
+  tag:
+    tags: 文章标签
+  about: 
+    about: 关于我
+    works: 开源项目
+    read: 我的读书
+    history: 博客历史
+  archives:
+    all: 全部
+    new: 最新
+    '2017': 2017
+    '2016': 2016
+    '2015': 2015
 
 
 # 头像

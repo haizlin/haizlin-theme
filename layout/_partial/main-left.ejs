@@ -16,7 +16,7 @@
         <div class="social">
             <a href="javascript:void(0);" title="" class="weixin"><img src="/images/ico_weixin.png" alt="">
                 <div class="weixin-qrcode" id="weixin-qrcode">
-                    <p>更多精彩扫扫这里</p>
+                    <p>更多精彩尽在这里</p>
                     <img style="width:160px;background:#fff;" src="/images/qr_code.png">
                 </div>
             </a>
@@ -26,7 +26,7 @@
 
         <nav>
             <% for (var i in theme.menu){ %>
-              <a href="<%- url_for(theme.menu[i]) %>" class="<%= current_path(page.path, theme.menu[i]) %>"><%= i %></a>
+              <a href="<%- url_for(theme.menu[i]) %>" class="<%= main_nav(page.path, theme.menu[i]) %>"><%= i %></a>
             <% } %>
         </nav>
     </div>
