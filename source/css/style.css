@@ -96,7 +96,7 @@ em{font-style:normal}
 .layui-layer-search li .description{font-size: 14px;color: #666;}
 
 .wrap-left{z-index: 101;}
-.main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 99;text-align: center;}
+.main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 99;text-align: center;overflow-y: auto;}
 .main-left .left-list{position: relative;z-index: 1000;}
 .main-left header{font-weight: bold;margin-top: 38px;}
 .main-left header .logo img{transition: all 2.0s;}  
