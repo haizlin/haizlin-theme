@@ -163,7 +163,7 @@ em{font-style:normal}
 .main-right .archives .times-list .year{color: #dd7b26;font-size: 36px;margin-right: 32px;}
 .main-right .archives .times-list ul{width:calc(100% - 130px);}
 .main-right .archives .times-list li{border-bottom: 1px solid #d1d6d6;clear: both;padding:15px 0;}
-.main-right .archives .times-list li a{font-size: 18px;color: #666;width:calc(100% - 120px);display: inline-block;line-height: 24px;}
+.main-right .archives .times-list li a{font-size: 18px;color: #666;width:calc(100% - 150px);display: inline-block;line-height: 24px;}
 .main-right .archives .times-list li a:hover{color: #dd7b26;}
 .main-right .archives .times-list li span{font-size: 14px;color: #666;float: right;background: url(../images/btn_date.png) no-repeat center left;padding-left: 32px;margin-right: 29px;display: inline-block;height: 20px;}
 

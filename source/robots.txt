@@ -1,7 +1,9 @@
-# hexo robots.txt
+# haizlin robots.txt
 User-agent: *
 Allow: /
 Allow: /archives/
+Allow: /about/
+Allow: /tags/
 
 Disallow: /vendors/
 Disallow: /js/
