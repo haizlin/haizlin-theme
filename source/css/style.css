@@ -245,7 +245,7 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .sidebar{width: 252px;ba}
 .main-right .sidebar aside{background: #fff;margin-bottom: 22px;}
 .main-right .sidebar aside .title{height: 40px;line-height: 40px;padding-left: 12px;border-bottom: 1px solid #cbcbcb;font-size: 14px;color: #2d3441;font-weight: bold;}
-.main-right .sidebar aside ul{padding:12px 8px 10px 14px;}
+.main-right .sidebar aside ul, .main-right .sidebar aside ol{padding:12px 8px 10px 14px;}
 .main-right .sidebar aside li{line-height: 24px;}
 .main-right .sidebar aside li a{color: #2d3441;font-size: 12px;}
 .main-right .sidebar aside li a:hover{color: #dd7b26;}

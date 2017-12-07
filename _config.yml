@@ -40,6 +40,9 @@ sub_menu:
 
 # 头像
 avatar: /images/logo.png
+weixin:
+  qrcode: /images/qr_code.png
+  tip: 欢迎关注“前端剑解”公众号
 
 default_category: special
 category_map:
@@ -63,6 +66,7 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- toc
 - recent_posts
 - ad
 - tag

@@ -103,6 +103,8 @@ git clone https://github.com/haizlin/blog-theme themes/haizlin
 
 ## 更新主题
 
+主题会不定时的优化和更新，更新主题代码：
+
 ```
 cd themes/haizlin
 git pull
@@ -170,6 +172,12 @@ wumii_siteprefix:
 
 # 百度推荐，填写百度推荐ID，例如：hm_t_88638
 baidu_tuijian_id:
+
+# 百度统计 参考网站: [百度统计](https://tongji.baidu.com/)
+baidu_anaylytics: 
+
+# 百度文章推送  参考网站: [百度站长](http://zhanzhang.baidu.com/)  
+baidu_push:
 
 # Calendar
 calendar:
