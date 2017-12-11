@@ -1,0 +1,9 @@
+<% if(is_post()){ %>
+<aside>
+    <p class="title">文章目录</p>
+    
+    <% if (post.toc){ %>
+    <%- toc(post.content) %>
+    <% } %>
+</aside>
+<% } %>

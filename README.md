@@ -73,6 +73,8 @@
 - [x] flex布局
 - [x] 扁平化设计
 - [x] 文章阅读进度条
+- [x] 支持feed
+- [x] 支持站点地图
 - [x] 网站公告功能(使用了banner推荐网站公告)
 - [x] 首页图片懒加载
 - [x] 首页文章缩略图自动检索文章内图片，支持自动随机图片
@@ -92,6 +94,102 @@
 > Chrome/Firefox/Opera/Safari/IE9+  
 
 ## 使用
+
+执行下面命令，然后修改`_config.yml`配置文件中`theme`为 `haizlin`.
+
+```
+git clone https://github.com/haizlin/blog-theme themes/haizlin
+```
+
+## 更新主题
+
+主题会不定时的优化和更新，更新主题代码：
+
+```
+cd themes/haizlin
+git pull
+```
+
+## 配置
+
+默认:
+
+```yml
+menu:
+  网站首页: /index.html
+  专题系列: /categories/special/index.html
+  解决方案: /categories/solution/index.html
+  工具资源: /tools/index.html
+  我的生活: /categories/life/index.html
+  关于我们: /about/index.html
+  文章标签: /tags/index.html
+  时间归档: /archives/index.html
+
+submenu:
+  订阅: /atom.xml
+  留言: /customization
+
+widgets:
+- search
+- category
+- calendar
+- recent_comments
+- links
+- tagcloud
+# - tag
+# - archive
+- weibo
+
+excerpt_link: Read More
+comment_link: Comments
+
+# header头像
+avatar: /img/default/avatar.png
+# header右侧图片展示
+ad:
+
+# 百度分享
+baidu_share: true
+
+# 请到baidu_tongji.ejs中替换代码
+baidu_tongji: true
+
+# enable是否开启；height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
+weibo:
+  height: 400
+  url:
+
+# 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
+comment_provider: duoshuo
+# 关联推荐提供可以选择baidu_tuijian 或者 wumii, 无需关联推荐，此处不填即可。
+relate_provider: baidu_tuijian
+
+# 多说，填写多说short_name
+duoshuo_short_name:
+
+# wumii，填写网站域名，例如：http://lupeng.me
+wumii_siteprefix:
+
+# 百度推荐，填写百度推荐ID，例如：hm_t_88638
+baidu_tuijian_id:
+
+# 百度统计 参考网站: [百度统计](https://tongji.baidu.com/)
+baidu_anaylytics: 
+
+# 百度文章推送  参考网站: [百度站长](http://zhanzhang.baidu.com/)  
+baidu_push:
+
+# Calendar
+calendar:
+  language: zh-CN
+  root: calendar
+```
+
+- `avatar` 头像URL
+- `baidu_share` 百度分享
+- `weibo` 新浪微博
+- `duoshuo` 多说评论
+- `wumii` 无觅关联
 
 ## 版本更新
 

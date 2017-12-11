@@ -1,4 +1,4 @@
-body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,legend,ol,p,select,td,textarea,th,ul{margin:0;padding:0}
+body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,legend,ol,p,select,td,textarea,th,ul,figure{margin:0;padding:0}
 audio,canvas,img,svg,video{max-width:100%;vertical-align:middle}
 body{font-family:Roboto,sans-serif,"微软雅黑","Microsoft YaHei",arial,"Helvetica Neue";position:relative;background: #ebebeb;}
 body,html{height:100%;width:100%;}
@@ -56,6 +56,13 @@ em{font-style:normal}
     .main-right .container{margin:0 !important;}
 }
 
+@media only screen and (max-height: 801px) {
+    .main-left footer{
+        position: static !important;
+        margin: 20px 0;
+    }
+}
+
 .wrap{}
 
 /* 标签颜色 */
@@ -96,7 +103,7 @@ em{font-style:normal}
 .layui-layer-search li .description{font-size: 14px;color: #666;}
 
 .wrap-left{z-index: 101;}
-.main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 99;text-align: center;}
+.main-left{background: #2d3441;width: 320px;color: #fff;height: 100%;position: fixed;top:0px;left: 0px;bottom: 0px;overflow: hidden;z-index: 99;text-align: center;overflow-y: auto;}
 .main-left .left-list{position: relative;z-index: 1000;}
 .main-left header{font-weight: bold;margin-top: 38px;}
 .main-left header .logo img{transition: all 2.0s;}  
@@ -108,8 +115,8 @@ em{font-style:normal}
 .main-left .search input{width: 195px;height: 38px;line-height: 38px;color: #52646c;font-size: 18px;padding:0 5px;background: url(../images/btn_search.png) no-repeat 9px center;padding-left: 41px;}
 .main-left .social{position: relative;}
 .main-left .social a{margin-right: 23px;}
-.main-left .social .weixin-qrcode{display: none;position: absolute;top: 46px;left:53px;background: #ebebeb;border-radius: 5px;padding:15px;color: #dd7b26;}
-.main-left .social .weixin-qrcode p{margin-bottom: 10px;}
+.main-left .social .weixin-qrcode{display: none;position: absolute;top: 46px;left:53px;background: #ebebeb;border-radius: 5px;padding:0 15px;color: #dd7b26;}
+.main-left .social .weixin-qrcode p{margin: 10px 0;}
 .main-left .social a>img{transition:All 0.4s ease-in-out;}
 .main-left .social a>img:hover{transform:scale(1.2);}
 
@@ -163,7 +170,7 @@ em{font-style:normal}
 .main-right .archives .times-list .year{color: #dd7b26;font-size: 36px;margin-right: 32px;}
 .main-right .archives .times-list ul{width:calc(100% - 130px);}
 .main-right .archives .times-list li{border-bottom: 1px solid #d1d6d6;clear: both;padding:15px 0;}
-.main-right .archives .times-list li a{font-size: 18px;color: #666;width:calc(100% - 120px);display: inline-block;line-height: 24px;}
+.main-right .archives .times-list li a{font-size: 18px;color: #666;width:calc(100% - 150px);display: inline-block;line-height: 24px;}
 .main-right .archives .times-list li a:hover{color: #dd7b26;}
 .main-right .archives .times-list li span{font-size: 14px;color: #666;float: right;background: url(../images/btn_date.png) no-repeat center left;padding-left: 32px;margin-right: 29px;display: inline-block;height: 20px;}
 
@@ -173,8 +180,10 @@ em{font-style:normal}
 
 /* tags */
 .main-right .article-tags{background: #fff;padding:46px 85px 59px 63px;}
-.main-right .article-tags a{margin-right: 18px;margin-bottom: 30px;border-radius: 10px;padding:5px 12px;display: inline-block;color: #2d3441;}
-.main-right .article-tags a:hover{font-weight: bold;color: #fff;}
+.main-right .article-tags a{margin-right: 18px;margin-bottom: 30px;border-radius: 10px;padding:5px 12px;display: inline-block;color: #fff;}
+.main-right .article-tags a:hover{color: #2d3441;}
+.main-right .article-tags span::before{content:"(";}
+.main-right .article-tags span::after{content:")";}
 
 /* 工具资源 */
 .main-right .article-tools .tools-list{background: #fff;margin-bottom: 26px;padding:20px 45px;}
@@ -243,14 +252,19 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .sidebar{width: 252px;ba}
 .main-right .sidebar aside{background: #fff;margin-bottom: 22px;}
 .main-right .sidebar aside .title{height: 40px;line-height: 40px;padding-left: 12px;border-bottom: 1px solid #cbcbcb;font-size: 14px;color: #2d3441;font-weight: bold;}
-.main-right .sidebar aside ul{padding:12px 8px 10px 14px;}
+.main-right .sidebar aside ul, .main-right .sidebar aside ol{padding:12px 8px 10px 14px;}
 .main-right .sidebar aside li{line-height: 24px;}
 .main-right .sidebar aside li a{color: #2d3441;font-size: 12px;}
 .main-right .sidebar aside li a:hover{color: #dd7b26;}
 
 .main-right .sidebar aside .tag-list{padding:12px 8px 10px 14px;}
-.main-right .sidebar aside .tag-list a{margin-right: 5px;margin-bottom: 10px;padding:5px 12px;display: inline-block;font-size:14px;}
-.main-right .sidebar aside .tag-list a:hover{font-weight: bold;color: #fff;}
+.main-right .sidebar aside .tag-list a{margin-right: 5px;margin-bottom: 10px;padding:5px 8px;display: inline-block;font-size:14px;color: #fff;}
+.main-right .sidebar aside .tag-list a:hover{color: #52646c;}
+.main-right .sidebar aside .tag-list span::before{content:"("}
+.main-right .sidebar aside .tag-list span::after{content:")"}
+
+.main-right .sidebar aside .mp-weixin{padding: 20px;}
+.main-right .sidebar aside .tip{text-align: center;padding-bottom: 20px;color: red;}
 
 .main-right footer{background: #434e60;padding:19px 70px;font-size: 16px;color: #fff;}
 .main-right footer em{color: #eb8d50;}
@@ -294,3 +308,169 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
     to { background-position: 0 100%; }
 }
 
+/* highlight */
+.content pre,
+.content .highlight {
+  background: #2d3441;
+  margin: auto;
+  padding: 0.35em 1.5em;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px;
+  overflow: auto;
+  color: #ccc;
+  line-height: 1.3rem;
+}
+.content h2{margin:15px 0;}
+.content .highlight .gutter pre {
+  color: #d3d3d3;
+  font-size: 0.85em;
+}
+.content pre,
+.content code {
+  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", monospace;
+  font-size: 1em;
+}
+.content pre code {
+  text-shadow: none;
+  padding: 0;
+  background: none;
+  color: #ccc;
+}
+.content .highlight {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  max-height: 50em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  overflow: auto;
+}
+.content .highlight pre {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.content .highlight table {
+  margin: 0;
+  width: auto;
+}
+.content .highlight td {
+  border: none;
+  padding: 0;
+}
+.content .highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.content .highlight figcaption:before,
+.content .highlight figcaption:after {
+  content: "";
+  display: table;
+}
+.content .highlight figcaption:after {
+  clear: both;
+}
+.content .highlight figcaption a {
+  float: right;
+}
+.content .highlight .gutter pre {
+  text-align: right;
+  padding-right: 1em;
+}
+.content code {
+  color: #808080;
+  background: rgba(248,237,223,0.5);
+  padding: 0.05em 0.3em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.08);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.08);
+  var: 1;
+  color: #fff;
+  background: rgba(153,204,153,0.75);
+}
+pre .comment,
+pre .quote,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo,
+pre .template-variable,
+pre .name,
+pre .selector-id,
+pre .selector-class,
+pre .deletion {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant,
+pre .builtin-name,
+pre .type,
+pre .meta,
+pre .link {
+  color: #f99157;
+}
+pre .attribute {
+  color: #fc6;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute,
+pre .string,
+pre .symbol,
+pre .bullet,
+pre .addition {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title,
+pre .title,
+pre .section {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function,
+pre .selector-tag {
+  color: #c9c;
+}
+pre .emphasis {
+  font-style: italic;
+}
+pre .strong {
+  font-weight: bold;
+}

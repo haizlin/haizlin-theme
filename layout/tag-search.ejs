@@ -1,0 +1,11 @@
+<article class="archives">
+    <div class="times-list search-list fn-c">
+        <ul class="fn-l">
+            <% page.posts.each(function(post, i){ %>
+                <%- partial('_partial/archive', {post: post}) %>
+            <% }) %>
+        </ul>
+    </div>
+    
+    <%- partial('_partial/pagination', null) %>
+</article>

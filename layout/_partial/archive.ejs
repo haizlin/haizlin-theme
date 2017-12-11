@@ -3,4 +3,4 @@
   if (is_archive()) format = "MM/DD";
 %>
 
-<li><a href="<%- url_for(post.link) %>"><%= post.title %></a><span class="date"><%- date(post.date, format) %></span></li>
+<li><a href="<%- url_for(post.path) %>"><%= post.title %></a><span class="date"><%- date(post.date, format) %></span></li>

@@ -1,43 +1,75 @@
 # Header
 menu:
-  ��վ��ҳ: /
-  ר��ϵ��: /categories/special/
-  �������: /categories/solution/
-  ������Դ: /tools/
-  �ҵ�����: /categories/life/
-  ��������: /about/
-  ���±�ǩ: /tags/
-  ʱ��鵵: /archives/
+  网站首页: /index.html
+  专题系列: /categories/special/index.html
+  解决方案: /categories/solution/index.html
+  工具资源: /tools/index.html
+  我的生活: /categories/life/index.html
+  关于我们: /about/index.html
+  文章标签: /tags/index.html
+  时间归档: /archives/index.html
+
+sub_menu:
+  special: 
+    categories/php: PHP
+    categories/nodejs: Nodejs
+    categories/sql: 数据库
+  life: 
+    categories/happy: 开心一刻
+    categories/tour: 旅游
+  solution:
+    categories/safe: 安全
+    categories/performance: 性能
+  tools:
+    manual: 手册
+    friendly: 友情链接
+  tag:
+    tags: 文章标签
+  about: 
+    about: 关于我
+    works: 开源项目
+    read: 我的读书
+    history: 博客历史
+  archives:
+    all: 全部
+    new: 最新
+    '2017': 2017
+    '2016': 2016
+    '2015': 2015
 
 
-# ͷ��
+# 头像
 avatar: /images/logo.png
+weixin:
+  qrcode: /images/qr_code.png
+  tip: 欢迎关注“前端剑解”公众号
 
 default_category: special
 category_map:
-    ר��: special
-    ����: solution
-    ����: life
+    专题: special
+    方案: solution
+    生活: life
+
+per_page: 3
 
 submenu:
-  ǰ��: /categories/special/front-end
+  前端: /categories/special/front-end
   PHP: /categories/special/php
 
 github: https://github.com/haizhilin2013
 blog_theme: https://github.com/haizlin/blog-theme
 
 # Content
-excerpt_link: '[�Ķ�ȫ��]'
+excerpt_link: '[阅读全文]'
 fancybox: true
 
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
-- tagcloud
-- archive
+- toc
 - recent_posts
+- ad
+- tag
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -51,13 +83,14 @@ show_count: false
 
 # Miscellaneous
 google_analytics:
+# favicon 文件要放在haizlin/source下
 favicon: /favicon.ico
 twitter:
 google_plus:
 fb_admins:
 fb_app_id:
 
-# Ҫ�޸ĸ�Ŀ¼�µ�����
+# 要修改根目录下的配置
 permalink: posts/:abbrlink/
 
 search:
@@ -74,3 +107,15 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+
+# 站点地图
+# yarn add hexo-generator-sitemap --save
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+
+excerptLength: 350
+
+
