@@ -56,6 +56,13 @@ em{font-style:normal}
     .main-right .container{margin:0 !important;}
 }
 
+@media only screen and (max-height: 801px) {
+    .main-left footer{
+        position: static !important;
+        margin: 20px 0;
+    }
+}
+
 .wrap{}
 
 /* 标签颜色 */
@@ -108,8 +115,8 @@ em{font-style:normal}
 .main-left .search input{width: 195px;height: 38px;line-height: 38px;color: #52646c;font-size: 18px;padding:0 5px;background: url(../images/btn_search.png) no-repeat 9px center;padding-left: 41px;}
 .main-left .social{position: relative;}
 .main-left .social a{margin-right: 23px;}
-.main-left .social .weixin-qrcode{display: none;position: absolute;top: 46px;left:53px;background: #ebebeb;border-radius: 5px;padding:15px;color: #dd7b26;}
-.main-left .social .weixin-qrcode p{margin-bottom: 10px;}
+.main-left .social .weixin-qrcode{display: none;position: absolute;top: 46px;left:53px;background: #ebebeb;border-radius: 5px;padding:0 15px;color: #dd7b26;}
+.main-left .social .weixin-qrcode p{margin: 10px 0;}
 .main-left .social a>img{transition:All 0.4s ease-in-out;}
 .main-left .social a>img:hover{transform:scale(1.2);}
 
@@ -314,6 +321,7 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
   color: #ccc;
   line-height: 1.3rem;
 }
+.content h2{margin:15px 0;}
 .content .highlight .gutter pre {
   color: #d3d3d3;
   font-size: 0.85em;
