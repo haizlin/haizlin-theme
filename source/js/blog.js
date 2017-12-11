@@ -19,6 +19,7 @@ var HzlBlog = {
         this.footer();
         this.search();
         this.searchChange();
+        this.tocVisitedColor();
     },
 
     tags: function() {
@@ -240,6 +241,13 @@ var HzlBlog = {
     resize: function() {
         $(window).resize(function() {
             var top = $(window).scrollTop();
+        });
+    },
+
+    // toc
+    tocVisitedColor: function(){
+        $('.toc-link').click(function(){
+            $(this).addClass('default-color');
         });
     }
 };

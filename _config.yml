@@ -31,12 +31,11 @@ sub_menu:
     read: 我的读书
     history: 博客历史
   archives:
-    all: 全部
-    new: 最新
-    '2017': 2017
-    '2016': 2016
     '2015': 2015
-
+    '2016': 2016
+    '2017': 2017
+    new: 最新
+    all: 全部
 
 # 头像
 avatar: /images/logo.png

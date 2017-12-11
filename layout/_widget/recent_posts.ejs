@@ -1,12 +1,14 @@
-<% if (site.posts.length){ %>
-<aside>
-    <p class="title"><%= __('recent_posts') %></p>
-    <ul>
-      <% site.posts.sort('date', -1).limit(10).each(function(post){ %>
-        <li>
-          <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
-        </li>
-      <% }) %>
-    </ul>
-</aside>
+<% if (!is_post() || !post.toc){ %>
+    <% if (site.posts.length){ %>
+    <aside>
+        <p class="title"><%= __('recent_posts') %></p>
+        <ul>
+          <% site.posts.sort('date', -1).limit(10).each(function(post){ %>
+            <li>
+              <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+            </li>
+          <% }) %>
+        </ul>
+    </aside>
+    <% } %>
 <% } %>

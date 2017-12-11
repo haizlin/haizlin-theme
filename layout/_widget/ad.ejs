@@ -1,7 +1,9 @@
-<aside>
-    <p class="title">微信公众账号</p>
-    <p class="mp-weixin">
-        <a href="javascript:void(0);"><img src="<%= theme.weixin.qrcode %>" alt="前端剑解微信公众号"></a>
-    </p>
-    <p class="tip"><%= theme.weixin.tip %></p>
-</aside>
+<% if (!is_post() || !post.toc){ %>
+    <aside>
+        <p class="title">微信公众账号</p>
+        <p class="mp-weixin">
+            <a href="javascript:void(0);"><img src="<%= theme.weixin.qrcode %>" alt="前端剑解微信公众号"></a>
+        </p>
+        <p class="tip"><%= theme.weixin.tip %></p>
+    </aside>
+<% } %>

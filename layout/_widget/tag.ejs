@@ -1,12 +1,12 @@
-<% if (site.tags.length){ %>
-<aside>
-    <p class="title">文章标签</p>
-    <p class="tag-list" id="tags-list">
-        <%- list_tags({
-            show_count: true,
-            style:'',
-            separator:''
-          }) %>
-    </p>
-</aside>
+<% if (!is_post() || !post.toc && site.tags.length){ %>
+    <aside>
+        <p class="title">文章标签</p>
+        <p class="tag-list" id="tags-list">
+            <%- list_tags({
+                show_count: true,
+                style:'',
+                separator:''
+              }) %>
+        </p>
+    </aside>
 <% } %>
