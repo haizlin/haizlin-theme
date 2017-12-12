@@ -28,6 +28,7 @@ em{font-style:normal}
 .tt-l{text-align:left !important}
 .tt-r{text-align:right !important}
 .red{color:red;}
+.default-color{color:#dd7b26;}
 
 @media screen and (max-width: 768px){
     .main-left {
@@ -252,10 +253,14 @@ bottom: -10%;left: 80%;height: 15px;width: 15px;-webkit-border-radius: 50%;-moz-
 .main-right .sidebar{width: 252px;ba}
 .main-right .sidebar aside{background: #fff;margin-bottom: 22px;}
 .main-right .sidebar aside .title{height: 40px;line-height: 40px;padding-left: 12px;border-bottom: 1px solid #cbcbcb;font-size: 14px;color: #2d3441;font-weight: bold;}
-.main-right .sidebar aside ul, .main-right .sidebar aside ol{padding:12px 8px 10px 14px;}
+.main-right .sidebar aside ul{padding: 12px 8px 10px 14px;}
+.main-right .sidebar aside ol{padding-left:14px;}
 .main-right .sidebar aside li{line-height: 24px;}
-.main-right .sidebar aside li a{color: #2d3441;font-size: 12px;}
+.main-right .sidebar aside li a{font-size: 12px;}
 .main-right .sidebar aside li a:hover{color: #dd7b26;}
+
+.main-right .sidebar aside.toc{position: fixed;width: 252px;} 
+.main-right .sidebar aside .toc-list{height: 410px; overflow-y: auto;padding:12px 8px 10px 14px;}
 
 .main-right .sidebar aside .tag-list{padding:12px 8px 10px 14px;}
 .main-right .sidebar aside .tag-list a{margin-right: 5px;margin-bottom: 10px;padding:5px 8px;display: inline-block;font-size:14px;color: #fff;}

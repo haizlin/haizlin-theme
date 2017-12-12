@@ -1,20 +1,15 @@
 // 左侧导航当前样式
-hexo.extend.helper.register('main_nav', function(path, navUrl){
-    console.log(path, navUrl);
-    var _path = '/' + path;
-
-    if(_path === navUrl){
+hexo.extend.helper.register('main_nav', function(category, navUrl){
+    if(navUrl.indexOf(category) !== -1){
         return 'current';
     }else{
         return '';
     }
 });
 
-// 左侧导航当前样式
+// 右侧子导航
 hexo.extend.helper.register('sub_nav', function(category, subMenu){
-    console.log('当前链接：', category);
     var currentObj = subMenu[category];
-    console.log(currentObj);
     var _path = '/' + category;
     var list = '';
 
@@ -24,11 +19,9 @@ hexo.extend.helper.register('sub_nav', function(category, subMenu){
         }else{
             var link = '/' + i + '/index.html';
             // link = link.replace('//','/');
-            console.log('链接＝', link);
             list += '<a href="' + link + '">' + currentObj[i] + '</a>'
         }
     }
 
     return list;
 });
-

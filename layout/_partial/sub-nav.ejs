@@ -1,5 +1,15 @@
 <section>
     <nav class="sub-nav">
-        <%- sub_nav(page.category || page.layout, theme.sub_menu) %>
+        <%
+            var category = '';
+            if(page.archive){
+                category = 'archives';
+            }else if(is_post() && page.categories['data'].length > 0){
+                category = page.categories['data'][0].name
+            }else{
+                category = page.category || page.layout;
+            }
+        %>
+        <%- sub_nav(category , theme.sub_menu) %>
     </nav>
 </section>
