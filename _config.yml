@@ -92,10 +92,6 @@ fb_app_id:
 # 要修改根目录下的配置
 permalink: posts/:abbrlink/
 
-search:
-  path: search.xml
-  field: all
-
 # yarn add hexo-generator-feed --save
 rss: /atom.xml
 feed:
