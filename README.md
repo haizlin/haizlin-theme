@@ -2,7 +2,7 @@
 
 > Haizlin-theme 是我宝贝老婆业余时间给我设计的一套非常简洁的扁平化博客模板，支持Hexo，有结构清晰的设计图。  
 > 以全屏为主，自适应移动端。  
-> 如果你也喜欢这个主题，那就动动手指 [Star](https://github.com/haizlin/blog-theme/stargazers) 支持一下吧！  
+> 如果你也喜欢这个主题，那就动动手指 [Star](https://github.com/haizlin/haizlin-theme/stargazers) 支持一下吧！  
 
 ## 设计图(PSD)
 > 设计理念：
@@ -14,55 +14,55 @@
 
 > 效果图，先睹为快  
 
-- 首页([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Home.png))  
+- 首页([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Home.png))  
 
 ![Home](./docs/views/Home.png)
 
-- 列表页([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/List.png))  
+- 列表页([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/List.png))  
 
 ![List](./docs/views/List.png)
 
-- 内容页([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Content.png))  
+- 内容页([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Content.png))  
 
 ![Content](./docs/views/Content.png)
 
-- 读书([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Read.png))
+- 读书([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Read.png))
 
 ![Read](./docs/views/Read.png)
 
-- 关于([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/About.png))
+- 关于([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/About.png))
 
 ![About](./docs/views/About.png)
 
-- 作品([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Works.png))
+- 作品([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Works.png))
 
 ![Works](./docs/views/Works.png)
 
-- 历史([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/History.png))
+- 历史([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/History.png))
 
 ![History](./docs/views/History.png)
 
-- 标签([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Tags.png))
+- 标签([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Tags.png))
 
 ![Tags](./docs/views/Tags.png)
 
-- 时间归档([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Archives.png))
+- 时间归档([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Archives.png))
 
 ![Archives](./docs/views/Archives.png)
 
-- 工具([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Tools.png))
+- 工具([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Tools.png))
 
 ![Tools](./docs/views/Tools.png)
 
-- 搜索([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Search.png))
+- 搜索([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Search.png))
 
 ![Search](./docs/views/Search.png)
 
-- 站点地图([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/Sitemap.png))
+- 站点地图([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/Sitemap.png))
 
 ![Sitemap](./docs/views/Sitemap.png)
 
-- 404([查看大图](https://raw.githubusercontent.com/haizlin/blog-theme/develop/docs/views/404.png))
+- 404([查看大图](https://raw.githubusercontent.com/haizlin/haizlin-theme/develop/docs/views/404.png))
 > 使用了[腾讯公益](http://www.qq.com/404/)的404页面
 
 ![404](./docs/views/404.png)
@@ -96,10 +96,23 @@
 
 ## 使用
 
-执行下面命令，然后修改`_config.yml`配置文件中`theme`为 `haizlin`.
+执行下面命令，然后修改根目录的配置文件`_config.yml`里的`theme`为 `haizlin`.
 
 ```
-git clone https://github.com/haizlin/blog-theme themes/haizlin
+git clone https://github.com/haizlin/haizlin-theme themes/haizlin
+```
+
+添加插件
+```
+// 添加搜索插件
+yarn add hexo-generator-json-content --save
+
+// 添加feed订阅
+yarn add hexo-generator-feed --save
+
+// 添加站点地图
+yarn add hexo-generator-sitemap --save
+
 ```
 
 ## 更新主题
